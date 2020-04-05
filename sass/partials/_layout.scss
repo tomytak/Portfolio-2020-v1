@@ -1,0 +1,28 @@
+// Box Sizing
+   * {
+       box-sizing: border-box;
+   }
+  // html,body {height: 100%;}
+/* #HTML5 */
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 87.5%;
+  margin: 0; }
+
+.container {
+  padding: 0 4%;
+  margin: 0 auto;
+ }

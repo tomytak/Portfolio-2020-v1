@@ -1,0 +1,34 @@
+// VARIABLES
+$bodyfont-family: "utopia-std", "Garamond", "Caslon", serif;
+$headingfont-family: "Nobel", "Roboto Condensed", sans-serif;
+$dinoheadingfont-family:"Roboto Condensed", sans-serif;
+$dinobodyfont-family: "Mr Eaves Mod OT", sans-serif;
+
+
+// VARIABLES
+$color-teal: #005563;
+$color-red: #CC1F3D;
+$color-yellow: #FEC412;
+$color-white: #fff;
+$color-black: rgba(0, 0, 0, 0.15);
+$color-gray: #999;
+
+
+
+
+// Breakpoints
+
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+
+//IMPORT PARTIALS
+@import "partials/toc";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/media";
+@import "partials/layout";
+@import "partials/grid_media_query";
+@import "partials/structure";
+@import "partials/animation";
+@import "partials/_dino_cs";

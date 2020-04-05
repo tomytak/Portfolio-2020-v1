@@ -1,0 +1,162 @@
+/* Main Sections */
+section {
+    padding: 3em 0;
+    display: -ms-grid;
+    display: grid;}
+    /* place-items: center; } */  
+
+/* LINKS _________________________________*/
+  /* Horizontal Rules */
+  .hr_ {
+    border: 0;
+    height: 1px;
+    background: $color-black;
+    margin: 4em 0; 
+  }
+  
+  /* HELPERS _________________________________*/
+  .sectionhead {
+    font-family: $headingfont-family;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 1em; }
+  
+  .sectionhead:after {
+    content: "";
+  
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: .2em; }
+  
+  .text-centered {
+    text-align: center;
+  }
+  .hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .subheader {
+    color: $color-gray;
+    margin-top: 1em;
+    font-style: normal;
+    font-weight: normal;
+    clear: both;
+  }
+
+
+
+/* site-header ________________________________*/
+.site-header{
+    padding: 1em;
+    color:$color-teal;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; 
+  }
+  
+    .site-header h1 {
+      font-size: 1.5em;
+      font-family: $headingfont-family;
+      margin: .5em 0 0 0;
+      /*to adjust baseline with nav text*/ 
+    }
+    .site-header a{
+      color: $color-teal;
+      list-style: none;
+      text-decoration: none;
+      text-transform: uppercase; }
+  
+  @media (min-width: $breakpoint-small) {
+    .site-header {
+      padding-top: 1em;
+    }
+  }
+  /* site-id ____________________________-*/
+  
+  .site-id img{
+  width: 7em;
+  height: auto;
+  }
+  
+
+/* site-nav ____________________________-*/
+  .site-navigation {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 80%;
+    font-family: $headingfont-family; 
+  }
+  
+  .site-navigation
+  .nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-flex;
+  display: -ms-flexbox;
+    display: block;
+   }
+  
+  .site-navigation .menu-button {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+  
+  .site-navigation ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .site-navigation li a {
+    padding: 1em;
+    text-align: left;
+    clear: both;
+    float: left;
+  }
+  
+  .site-navigation li a:hover {
+  font-weight: 700;
+  }
+  
+  /*PAGE NAV ___________________________________*/
+  
+  .page-nav{
+    position: fixed;
+    margin-top: 15%;
+  }
+  
+  .page-nav a{  
+    text-decoration: none;
+    color: $color-teal;
+  }
+  
+  .page-nav ul li {
+    border-left:2px dashed $color-red;
+    display: block;
+    font-family: $headingfont-family;
+    padding-top: 2em;
+  }
+  
+  .page-nav ul li:before{ 
+    content: "\26AC";
+    color: $color-yellow; 
+    margin-left: -1em; 
+    padding-top: 0;
+  } 
+  
+  .page-nav ul li:hover{ 
+    font-weight: 700;
+  }
+  

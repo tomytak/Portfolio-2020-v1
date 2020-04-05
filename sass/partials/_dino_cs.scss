@@ -1,0 +1,157 @@
+/* HERO */
+
+.hero {
+    text-align: left; 
+  margin-bottom: 2em;
+  align-items: flex-start;
+  }
+  .hero h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero h2{
+    font-family: $bodyfont-family;
+    text-transform: none;
+  }
+  
+  .hero h3{
+    font-family: $bodyfont-family;
+    color: $color-black;
+    text-transform: none;
+  }
+  .hero p{
+  margin-top: .5em;
+      margin-right: auto; 
+  }
+  .hero .one-third {
+   margin-right: 2em;
+  }
+  
+  .hero .two-thirds{
+    margin: 0;
+   margin-left: 0em;
+  }
+  .hero .row{
+    text-align: left;
+    margin: 0;
+  }
+  
+  .hero_sub-info_title{
+    color: $color-gray;
+    text-transform: uppercase;
+    font-family: $headingfont-family;
+    margin:0;
+    font-weight: 500;
+  }
+  
+  .hero_sub-info{
+    color: $color-gray;
+    font-style: italic;
+  display: block;
+  }
+  .hero ul{
+    display: block;
+  }
+  
+  .hero ul li:before{
+    content: "\26AC";
+    color: $color-yellow; 
+    display: inline-block;
+    width: 1.5em; 
+    margin-left: -2.5em; 
+    padding-top: 0;
+  }
+  
+  .hero hr{
+    border-top:2px dashed $color-red;
+    width: 16em;
+  margin-left: 0;
+  }
+  
+  .hero .button{
+    margin-top: 1em;
+  }
+  /* OBJECTIVE */
+  
+  .objective .row{
+    align-items: flex-start;
+    margin: 0 auto;
+    border-top: 2px dashed $color-red;
+    border-bottom: 2px dashed $color-red;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  
+  .objective .one-third{
+    margin-right: 3em;
+  }
+  
+  /* DESIGN SYSTEM—TYPE SPECI */
+  .type_specimin .row{
+  align-items: flex-start;
+  }
+  
+  .type_specimin .one-half{
+    margin-right: 3em;
+  }
+  
+  /* UI DESIGN */
+  
+  .final .row {
+    margin-bottom: .5em;
+    justify-content: space-between;
+  }
+  
+  .final .end_product{
+    margin-top: 5em;
+  }
+  /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
+  .objective .column,
+  .wireframe .column, 
+  .illustrator .column, 
+  .sketch .column,
+  .aftereffects .column
+  {
+    margin-right: 5%;
+  }
+  
+  /* WIREFRAME */
+  .wireframe .one-third{
+    margin-right: 0;
+  }
+  
+  /* sketch */
+  .sketch .row{
+    justify-content: space-between;
+  }
+  /* illustrator */
+  .illustrator .two-thirds{
+    margin-right: 0;
+  }
+  
+  /* after effects */
+  .aftereffects .one-third{
+    margin-right: 0;
+  }
+  
+  /* ANIMATIONS */
+  
+  .animation .one-third {
+  padding: 1em;
+  }
+  
+  /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
+  
+  .text-centered a {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    /* font-size: 80%; */
+    font-family: $headingfont-family; 
+    text-decoration: none;
+    color: $color-teal;
+  }
+  .icon-char{
+    color: $color-teal;
+  width:2em;
+  }
