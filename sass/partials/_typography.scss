@@ -12,7 +12,8 @@ body {
     margin: .5em 0;
     font-weight: 100;
     line-height: 1;
-    color: $color-teal; }  
+    color: $color-teal; 
+  }  
   
   h1 {
     font-size: 3em;
@@ -53,59 +54,120 @@ body {
     color: $color-gray;
     margin-bottom: 1em; }
   
-  section#web, section#artwork, section#final_hi-fi {
+  
+  section#brand_identity, section#copywriting, section#logo, section#web, section#artwork, section#final_hi-fi, section#motion_graphic {
     padding-top: 3em;
     padding-bottom: 0;
     margin: 0; }
   
-  section.sketches, section.styletiles {
+  section.sketches, section#artwork, section.styletiles {
     padding-top: 0; }
   
-  #artwork h1, #web h1, #final_hi-fi h1 {
+  #copywriting h1, #logo h1, #brand_identity h1, #artwork h1, #web h1, #final_hi-fi h1, #motion_graphic h1 {
     font-size: 3em; }
   
   /* TYPOGRAPHIC SCALE DINO______________________*/
   
-  .type_dino_h1{
-    font-family: $dinoheadingfont-family;
+  .type_dino{
+
+    .type_scale_title{
+      font-family: $headingfont-family; 
+      font-size: 2em;
+      line-height: 1;
+      font-weight: 300;
+      color: $color-teal; 
+    }
+
+    h1{
+      font-family: $dinoheadingfont-family;
+      font-size: 4em;
+      font-weight: 700; 
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: $color-black;
+    }
+      
+    h2{
+      font-family: $dinoheadingfont-family;
+      font-size: 2em;
+      font-weight: 700; 
+      color: $color-black;
+    }
+      
+    h3{
+      font-family: $dinoheadingfont-family;
+      font-size: 1.5em;
+      font-weight: 700; 
+      color: $color-black;
+      text-transform: uppercase;
+    }
+
+    p{
+      font-family: $dinobodyfont-family;
+      font-size: 2em;
+      font-weight: 300;
+      line-height: 1.1;
+      max-width: 17em;
+    }
+    
+    p strong {
+      font-family: $dinobodyfont-family;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+  #styletiles .sectionhead{
+    font-size: 3em;
+    margin-bottom: -1em;
+  }
+//   ________________________________________
+  
+// CONQUES
+
+.type_conquest{
+  .type_scale_title{
+    font-family: $headingfont-family; 
+    font-size: 2em;
+    line-height: 1;
+    font-weight: 300;
+    color: $color-teal; 
+  }
+
+  h1{
+    font-family: $conquestheaderfont-family;
     font-size: 4em;
     font-weight: 700; 
     margin-bottom: 0;
     text-transform: uppercase;
     color: $color-black;
   }
-    
-  .type_dino_h2{
-    font-family: $dinoheadingfont-family;
+  
+  h2{
+    font-family: $conquestheaderfont-family;
     font-size: 2em;
     font-weight: 700; 
     color: $color-black;
   }
     
-  .type_dino_h3{
-    font-family: $dinoheadingfont-family;
+  h3{
+    font-family:$conquestheaderfont-family;
     font-size: 1.5em;
     font-weight: 700; 
     color: $color-black;
     text-transform: uppercase;
   }
-  #styletiles .sectionhead{
-    font-size: 3em;
-    margin-bottom: -1em;
-  }
-  
-  .type_dino_p{
-    font-family: $dinobodyfont-family;
-    font-size: 2em;
+
+  p{
+    font-family: $conquestbodyfont-family;
+    font-size: 1em;
     font-weight: 300;
-    line-height: 1.1;
-    max-width: 17em;
+    line-height: 1.5;
+    max-width: 24em;
   }
-  
-  p strong {
-    font-family: $dinobodyfont-family;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-//   ________________________________________
-  
+}
+
+.logo_emphasis{
+ font-weight: 700;
+ font-size: 1.5em;
+ color: $color-teal;
+}

@@ -2,41 +2,45 @@
 
 .hero {
     text-align: left; 
-  margin-bottom: 2em;
-  align-items: flex-start;
-  }
-  .hero h1 {
+  margin-bottom: 3em;
+
+  h1 {
     margin: 0;
     padding: 0;
   }
-  
-  .hero h2{
+
+  h2{
     font-family: $bodyfont-family;
     text-transform: none;
+    margin-top: 0;
   }
-  
-  .hero h3{
+
+  h3{
     font-family: $bodyfont-family;
     color: $color-black;
     text-transform: none;
   }
-  .hero p{
+
+  p{
   margin-top: .5em;
       margin-right: auto; 
   }
-  .hero .one-third {
+
+ .one-third {
    margin-right: 2em;
-  }
+ }
   
-  .hero .two-thirds{
+  .two-thirds{
     margin: 0;
-   margin-left: 0em;
+    margin-left: 0em;
   }
-  .hero .row{
+
+  .row{
     text-align: left;
-    margin: 0;
+    margin-top: 1em;
+    align-items: flex-start;
   }
-  
+
   .hero_sub-info_title{
     color: $color-gray;
     text-transform: uppercase;
@@ -50,31 +54,35 @@
     font-style: italic;
   display: block;
   }
-  .hero ul{
+
+  ul{
     display: block;
+  
+    li:before{
+      content: "\26AC";
+      color: $color-yellow; 
+      display: inline-block;
+      width: 1.5em; 
+      margin-left: -2.5em; 
+      padding-top: 0;
+    }
   }
   
-  .hero ul li:before{
-    content: "\26AC";
-    color: $color-yellow; 
-    display: inline-block;
-    width: 1.5em; 
-    margin-left: -2.5em; 
-    padding-top: 0;
-  }
-  
-  .hero hr{
+  hr{
     border-top:2px dashed $color-red;
     width: 16em;
   margin-left: 0;
   }
   
-  .hero .button{
+  .button{
     margin-top: 1em;
   }
-  /* OBJECTIVE */
+}
+
+/* OBJECTIVE */
   
-  .objective .row{
+.objective { 
+  .row{
     align-items: flex-start;
     margin: 0 auto;
     border-top: 2px dashed $color-red;
@@ -83,29 +91,34 @@
     padding-bottom: 2em;
   }
   
-  .objective .one-third{
+  .one-third{
     margin-right: 3em;
   }
+}
   
-  /* DESIGN SYSTEM—TYPE SPECI */
-  .type_specimin .row{
+/* DESIGN SYSTEM—TYPE SPECI */
+.type_specimin {
+  .row{
   align-items: flex-start;
   }
   
-  .type_specimin .one-half{
+  .one-half{
     margin-right: 3em;
   }
+}
+
+/* UI DESIGN */
   
-  /* UI DESIGN */
-  
-  .final .row {
+.final{
+  .row {
     margin-bottom: .5em;
     justify-content: space-between;
   }
   
-  .final .end_product{
+  .end_product{
     margin-top: 5em;
   }
+}
   /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
   .objective .column,
   .wireframe .column, 
@@ -116,34 +129,49 @@
     margin-right: 5%;
   }
   
-  /* WIREFRAME */
-  .wireframe .one-third{
+/* WIREFRAME */
+.wireframe{ 
+  .one-third{
     margin-right: 0;
   }
+}
   
-  /* sketch */
-  .sketch .row{
-    justify-content: space-between;
+/* sketch */
+.sketch {
+  .row{
+  justify-content: space-between;
   }
-  /* illustrator */
-  .illustrator .two-thirds{
+}
+
+/* illustrator */
+
+.illustrator {
+  .two-thirds{
     margin-right: 0;
   }
+}
   
-  /* after effects */
-  .aftereffects .one-third{
+/* after effects */
+  
+.aftereffects {
+  .one-third{
     margin-right: 0;
   }
+}
+
+/* ANIMATIONS */
   
-  /* ANIMATIONS */
-  
-  .animation .one-third {
+.animation{
+  .one-third {
   padding: 1em;
   }
+}
+
+/* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
   
-  /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
-  
-  .text-centered a {
+.text-centered {
+
+  a {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     /* font-size: 80%; */
@@ -151,7 +179,9 @@
     text-decoration: none;
     color: $color-teal;
   }
+
   .icon-char{
     color: $color-teal;
   width:2em;
   }
+}
