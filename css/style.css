@@ -76,7 +76,8 @@ p {
   color: #999;
   margin-bottom: 1em; }
 
-section#brand_identity, section#copywriting, section#logo, section#web, section#artwork, section#final_hi-fi, section#motion_graphic {
+section#brand_identity, section#copywriting, section#logo, section#web, section#artwork, section#final_hi-fi, section#motion_graphic,
+section#final_product {
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0; }
@@ -84,7 +85,7 @@ section#brand_identity, section#copywriting, section#logo, section#web, section#
 section.sketches, section#artwork, section.styletiles {
   padding-top: 0; }
 
-#copywriting h1, #logo h1, #brand_identity h1, #artwork h1, #web h1, #final_hi-fi h1, #motion_graphic h1 {
+#copywriting h1, #logo h1, #brand_identity h1, #artwork h1, #web h1, #final_hi-fi h1, #motion_graphic h1, #final_product h1 {
   font-size: 3em; }
 
 /* TYPOGRAPHIC SCALE DINO______________________*/
@@ -496,25 +497,21 @@ li {
 .page-nav {
   position: fixed;
   margin-top: 15%; }
-
-.page-nav a {
-  text-decoration: none;
-  color: #005563; }
-
-.page-nav ul li {
-  border-left: 2px dashed #CC1F3D;
-  display: block;
-  font-family: "Nobel", "Roboto Condensed", sans-serif;
-  padding-top: 2em; }
-
-.page-nav ul li:before {
-  content: "\26AC";
-  color: #FEC412;
-  margin-left: -1em;
-  padding-top: 0; }
-
-.page-nav ul li:hover {
-  font-weight: 700; }
+  .page-nav a {
+    text-decoration: none;
+    color: #005563; }
+  .page-nav ul li {
+    border-left: 2px dashed #CC1F3D;
+    display: block;
+    font-family: "Nobel", "Roboto Condensed", sans-serif;
+    padding-top: 2em; }
+  .page-nav ul li:before {
+    content: "\26AC";
+    color: #FEC412;
+    margin-left: -1em;
+    padding-top: 0; }
+  .page-nav ul li:hover {
+    font-weight: 700; }
 
 /* Main Site Section (Main Content Area) */
 /* Page Fade-ins */

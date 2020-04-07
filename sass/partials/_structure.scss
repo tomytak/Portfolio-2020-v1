@@ -135,28 +135,28 @@ section {
   .page-nav{
     position: fixed;
     margin-top: 15%;
-  }
-  
-  .page-nav a{  
+
+  a{  
     text-decoration: none;
     color: $color-teal;
   }
   
-  .page-nav ul li {
+  ul li {
     border-left:2px dashed $color-red;
     display: block;
     font-family: $headingfont-family;
     padding-top: 2em;
   }
   
-  .page-nav ul li:before{ 
+  ul li:before{ 
     content: "\26AC";
     color: $color-yellow; 
     margin-left: -1em; 
     padding-top: 0;
-  } 
-  
-  .page-nav ul li:hover{ 
+  }
+
+  ul li:hover{ 
     font-weight: 700;
   }
+}
   
