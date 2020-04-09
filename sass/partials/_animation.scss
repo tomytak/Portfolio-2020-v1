@@ -51,3 +51,12 @@ fade-in {
     animation-delay: 1s;
   }
 }
+
+
+
+
+.revealer{
+  &.active{
+    // background: red;
+  }
+}
