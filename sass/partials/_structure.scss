@@ -51,29 +51,30 @@ section {
 
 
 /* site-header ________________________________*/
-.site-header{
-    padding: 1em;
-    color:$color-teal;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between; 
+.site-header, .site-footer{
+  padding: 1em;
+  color:$color-teal;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; 
+
+  h1 {
+    font-size: 1.5em;
+    font-family: $headingfont-family;
+    margin: .5em 0 0 0;
+    /*to adjust baseline with nav text*/ 
   }
   
-    .site-header h1 {
-      font-size: 1.5em;
-      font-family: $headingfont-family;
-      margin: .5em 0 0 0;
-      /*to adjust baseline with nav text*/ 
-    }
-    .site-header a{
-      color: $color-teal;
-      list-style: none;
-      text-decoration: none;
-      text-transform: uppercase; }
-  
+  a{
+    color: $color-teal;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase; 
+  }
+}
   @media (min-width: $breakpoint-small) {
     .site-header {
       padding-top: 1em;
@@ -93,9 +94,7 @@ section {
     letter-spacing: 0.15em;
     font-size: 80%;
     font-family: $headingfont-family; 
-  }
-  
-  .site-navigation
+
   .nav ul {
     margin: 0;
     padding: 0;
@@ -105,13 +104,13 @@ section {
     display: block;
    }
   
-  .site-navigation .menu-button {
+  .menu-button {
     position: absolute;
     left: -9999px;
     top: -9999px;
   }
   
-  .site-navigation ul,
+  ul,
   li {
     margin: 0;
     padding: 0;
@@ -119,16 +118,17 @@ section {
     display: inline-block;
   }
   
-  .site-navigation li a {
+  li a {
     padding: 1em;
     text-align: left;
     clear: both;
     float: left;
   }
   
-  .site-navigation li a:hover {
+  li a:hover {
   font-weight: 700;
   }
+}
   
   /*PAGE NAV ___________________________________*/
   
@@ -159,4 +159,9 @@ section {
     font-weight: 700;
   }
 }
-  
+
+// FOOTER ______________________________________
+
+.one-third small a:hover{
+  font-weight: 700;
+}
