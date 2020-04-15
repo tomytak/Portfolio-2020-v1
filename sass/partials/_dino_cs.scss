@@ -82,9 +82,9 @@
 /* OBJECTIVE */
   
 .objective { 
+  margin: 0 auto;
   .row{
     align-items: flex-start;
-    margin: 0 auto;
     border-top: 2px dashed $color-red;
     border-bottom: 2px dashed $color-red;
     padding-top: 2em;
@@ -92,7 +92,11 @@
   }
   
   .one-third{
-    margin-right: 3em;
+    margin-right: 5em;
+  }
+
+  .two-thirds{
+    max-width: 25em;
   }
 }
   
@@ -110,9 +114,11 @@
 /* UI DESIGN */
   
 .final{
+  align-items: flex-end;
   .row {
     margin-bottom: .5em;
     justify-content: space-between;
+  
   }
   
   .end_product{

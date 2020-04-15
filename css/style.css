@@ -577,6 +577,9 @@ fade-in {
     -webkit-animation-delay: 1s;
     animation-delay: 1s; }
 
+.revealer.active {
+  background: red; }
+
 /* HERO */
 .hero {
   text-align: left;
@@ -633,18 +636,20 @@ fade-in {
     margin-top: 1em; }
 
 /* OBJECTIVE */
-.objective .row {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  margin: 0 auto;
-  border-top: 2px dashed #CC1F3D;
-  border-bottom: 2px dashed #CC1F3D;
-  padding-top: 2em;
-  padding-bottom: 2em; }
-
-.objective .one-third {
-  margin-right: 3em; }
+.objective {
+  margin: 0 auto; }
+  .objective .row {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-top: 2px dashed #CC1F3D;
+    border-bottom: 2px dashed #CC1F3D;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+  .objective .one-third {
+    margin-right: 5em; }
+  .objective .two-thirds {
+    max-width: 25em; }
 
 /* DESIGN SYSTEM—TYPE SPECI */
 .type_specimen .row {
@@ -656,14 +661,17 @@ fade-in {
   margin-right: 3em; }
 
 /* UI DESIGN */
-.final .row {
-  margin-bottom: .5em;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
-.final .end_product {
-  margin-top: 5em; }
+.final {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .final .row {
+    margin-bottom: .5em;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .final .end_product {
+    margin-top: 5em; }
 
 /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
 .objective .column,
