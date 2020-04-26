@@ -1,141 +1,211 @@
 /* #TYPOGRAPHY  */
 /* BODY */
 body {
-    font-family: $bodyfont-family;
-    font-size: 100%;
-    line-height: 1.4;
-    }
-  
-  /* HEADING*/
-  h1, h2, h3 {
-    font-family: $headingfont-family; 
-    margin: .5em 0;
-    font-weight: 100;
-    line-height: 1;
-    color: $color-teal; 
-  }  
-  
-  h1 {
-    font-size: 3em;
-    line-height: 1;
+  font-family: $bodyfont-family;
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+/* HEADING*/
+h1, h2, h3 {
+  font-family: $headingfont-family; 
+  margin: .5em 0;
+  font-weight: 100;
+  line-height: 1;
+  color: $color-teal; 
+}  
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
   font-weight: 500;
   color:$color-red;
+  text-transform: uppercase;
+}
+
+h2 {
+
+  font-family: $headingfont-family; 
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 700;
+  color: $color-teal; 
+}
+
+h3 {
+  font-family: $bodyfont-family; 
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-weight: 700;
+  color: $color-teal; 
+}
+
+
+
+p {
+  font-family: $bodyfont-family;
+  font-size: 1em;
+  max-width: 35em;
+font-weight: 100;
+font-style: normal;
+}
+
+.small-title{
+  font-family: $headingfont-family;
+  font-size: 1em;
+  max-width: 35em;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: $color-teal;
+  margin-bottom: .5em;
+}
+
+// TYPE SPECIMEN_______________________________
+.mainhead {
+  font-size: 6em;
+  margin-bottom: 0; }
+
+.subhead {
+  font-family: $headingfont-family;
+  color: $color-gray;
+  margin-bottom: 1em; }
+
+
+section#brand_identity, section#copywriting, section#logo, section#sketches, 
+section#logo_exploration, 
+section#hi-fi,
+section#final,section#web, section#artwork, section#motion_graphic{
+  padding-top: 3em;
+  padding-bottom: 0;
+  margin: 0; 
+}
+
+section.sketches, section#artwork, section.styletiles {
+  padding-top: 0; 
+}
+
+#copywriting h1, #logo h1, #sketches h1,#brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #final h1 {
+  font-size: 3em; 
+}
+  
+// HERO_____________________________________
+.hero{
+  text-align: left; 
+  margin-bottom: 3em;
+
+  .hero_sub-info{
+    color: $color-black;
+    font-style: italic;
+    display: block;
+    margin-bottom: .5em;
   }
-  
-  h2 {
-  
-    font-size: 2em;
-    line-height: 1.4;
-    font-weight: 300;
-    text-transform: uppercase;
-   }
-  
-  h3 {
-    font-size: 1.5em;
-    line-height: 1.4;
-    font-weight: 300;
-    text-transform: uppercase;
+
+  h1{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
   }
-  
-  p {
+
+  h2{
     font-family: $bodyfont-family;
-    font-size: 1em;
-    max-width: 35em;
-  font-weight: 100;
-  font-style: normal;}
-  
-  /* TYPE SPECIMEN*/
-  .mainhead {
-    font-size: 6em;
-    margin-bottom: 0; }
-  
-  .subhead {
-    font-family: $headingfont-family;
+    text-transform: none;
+    margin-top: .5em;
+    margin-bottom:.2em;
+  }
+
+  h3{
+    font-weight: 300;
+    color: $color-black;
+    text-transform: none;
+    margin-top: 0;
+  }
+
+  .hero_sub-info_title{
     color: $color-gray;
-    margin-bottom: 1em; }
+    text-transform: uppercase;
+    font-family: $headingfont-family;
+    margin:0;
+    font-weight: 300;
+    letter-spacing: .2em;
+  }
+}
+
+// OBJECTIVE
+
+.objective{
+
+  .hero_sub-info_title{
+    color: $color-gray;
+    text-transform: uppercase;
+    font-family: $headingfont-family;
+    margin:0;
+    font-weight: 500;
+    letter-spacing: .2em;
+  }
   
-  
-  section#brand_identity, section#copywriting, section#logo, section#sketches, 
-  section#logo_exploration, 
-  section#hi-fi,
-  section#final,section#web, section#artwork, section#motion_graphic
- {
-    padding-top: 3em;
-    padding-bottom: 0;
-    margin: 0; }
-  
-  section.sketches, section#artwork, section.styletiles {
-    padding-top: 0; }
-  
-  #copywriting h1, #logo h1, #sketches h1,#brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #final h1 {
-    font-size: 3em; }
-  
+  .hero_sub-info{
+    color: $color-gray;
+    font-style: italic;
+    display: block;
+  }
+  p{
+    margin-top:-.5em;
+    margin-right: auto; 
+    }
+}
+
   /* TYPOGRAPHIC SCALE DINO______________________*/
   
-  .type_dino{
+.type_dino{
 
-    .type_scale_title{
-      font-family: $headingfont-family; 
-      font-size: 2em;
-      line-height: 1;
-      font-weight: 300;
-      color: $color-teal; 
-    }
+  h1,h2,h3{
+    font-family: $dinoheadingfont-family;
+    text-transform: uppercase;
+    color: $color-black;
+    font-weight: 700; 
+  }
 
-    h1{
-      font-family: $dinoheadingfont-family;
-      font-size: 4em;
-      font-weight: 700; 
-      margin-bottom: 0;
-      text-transform: uppercase;
-      color: $color-black;
-    }
-      
-    h2{
-      font-family: $dinoheadingfont-family;
-      font-size: 2em;
-      font-weight: 700; 
-      color: $color-black;
-    }
-      
-    h3{
-      font-family: $dinoheadingfont-family;
-      font-size: 1.5em;
-      font-weight: 700; 
-      color: $color-black;
-      text-transform: uppercase;
-    }
-
-    p{
-      font-family: $dinobodyfont-family;
-      font-size: 2em;
-      font-weight: 300;
-      line-height: 1.1;
-      max-width: 17em;
-    }
+  h1{
     
-    p strong {
-      font-family: $dinobodyfont-family;
-      text-transform: uppercase;
-      font-weight: 400;
-    }
+    margin-top: .2em;
+    font-size: 4em;
+    margin-bottom: 0;
   }
-  #styletiles .sectionhead{
-    font-size: 3em;
-    margin-bottom: -1em;
+    
+  h2{
+    font-size: 2em;
   }
+    
+  h3{
+    font-size: 1.5em;
+  }
+
+  p{
+    font-family: $dinobodyfont-family;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.1;
+    max-width: 17em;
+  }
+  
+  p strong {
+    font-family: $dinobodyfont-family;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}
+
+#styletiles .sectionhead{
+  font-size: 3em;
+  margin-bottom: -1em;
+}
 //   ________________________________________
   
 // CONQUES
 
 .type_conquest{
-  .type_scale_title{
-    font-family: $headingfont-family; 
-    font-size: 2em;
-    line-height: 1;
-    font-weight: 300;
-    color: $color-teal; 
-  }
 
   h1{
     font-family: $conquestheaderfont-family;
@@ -171,7 +241,7 @@ body {
 }
 
 .logo_emphasis{
- font-weight: 700;
- font-size: 1.5em;
- color: $color-teal;
+font-weight: 700;
+font-size: 1.5em;
+color: $color-teal;
 }

@@ -2,51 +2,51 @@
 section {
     padding: 3em 0;
     display: -ms-grid;
-    display: grid;}
-    /* place-items: center; } */  
+    display: grid;
+}
+/* place-items: center; } */  
 
 /* LINKS _________________________________*/
-  /* Horizontal Rules */
-  .hr_ {
-    border: 0;
-    height: 1px;
-    background: $color-black;
-    margin: 4em 0; 
-  }
+/* Horizontal Rules */
+.hr_ {
+  border: 0;
+  height: 1px;
+  background: $color-black;
+  margin: 4em 0; 
+}
   
   /* HELPERS _________________________________*/
-  .sectionhead {
-    font-family: $headingfont-family;
-    text-align: center;
-    font-size: 1em;
-    line-height: 1;
-    text-transform: uppercase;
-    margin-bottom: 1em; }
-  
-  .sectionhead:after {
-    content: "";
-  
-    display: block;
-    width: 100px;
-    margin: 0 auto;
-    margin-top: .2em; }
-  
-  .text-centered {
-    text-align: center;
-  }
-  .hidden {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  
-  .subheader {
-    color: $color-gray;
-    margin-top: 1em;
-    font-style: normal;
-    font-weight: normal;
-    clear: both;
-  }
+.sectionhead {
+  font-family: $headingfont-family;
+  font-size: 1em;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 1em; }
+
+.sectionhead:after {
+  content: "";
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: .2em; 
+}
+
+.text-centered {
+  text-align: center;
+}
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.subheader {
+  color: $color-gray;
+  margin-top: 1em;
+  font-style: normal;
+  font-weight: normal;
+  clear: both;
+}
 
 
 
@@ -75,25 +75,27 @@ section {
     text-transform: uppercase; 
   }
 }
-  @media (min-width: $breakpoint-small) {
-    .site-header {
-      padding-top: 1em;
-    }
+@media (min-width: $breakpoint-small) {
+  .site-header {
+    padding-top: 1em;
   }
-  /* site-id ____________________________-*/
-  
-  .site-id img{
-  width: 7em;
-  height: auto;
-  }
+}
+
+
+/* site-id ____________________________-*/
+
+.site-id img{
+width: 7em;
+height: auto;
+}
   
 
 /* site-nav ____________________________-*/
-  .site-navigation {
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 80%;
-    font-family: $headingfont-family; 
+.site-navigation {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 80%;
+  font-family: $headingfont-family; 
 
   .nav ul {
     margin: 0;
@@ -132,20 +134,27 @@ section {
   
   /*PAGE NAV ___________________________________*/
   
-  .page-nav{
-    position: fixed;
-    margin-top: 15%;
+.page-nav{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
 
   a{  
     text-decoration: none;
     color: $color-teal;
   }
   
+  ul {
+    margin: 0;
+  }
+
   ul li {
     border-left:2px dashed $color-red;
     display: block;
     font-family: $headingfont-family;
     padding-top: 2em;
+    padding: 1em 0;
+    padding-left:.6em;
   }
   
   ul li:before{ 
@@ -155,10 +164,110 @@ section {
     padding-top: 0;
   }
 
-  ul li:hover{ 
+  ul li:hover, a.active { 
     font-weight: 700;
   }
 }
+
+// HERO HOMEPAGE_________________________________________
+
+.home-hero{
+  background-image: url("video/tomylogo.gif");
+}
+
+/* HERO ___________________________*/
+
+.hero {
+  .proj_summary{
+    margin-top: 2em;
+    padding-top:1em;
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-bottom:3em;
+  }
+}
+
+/* OBJECTIVE _______________________*/
+  
+.objective { 
+  margin: 0 auto;
+
+  .row{
+    align-items: flex-start;
+    border-bottom: 2px dashed $color-red;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    justify-content: space-between;
+  }
+
+  .one-third{
+
+    ul{
+      padding-top: 1em;
+    li:before{
+      content: "\26AC";
+      color: $color-yellow; 
+      display: inline-block;
+      width: 1.5em; 
+      margin-left: -2.5em; 
+      padding-top: 0;
+    }
+  }
+  }
+  
+  .two-thirds{
+    margin-left: 3em;
+    max-width: 25em;
+  }
+
+  hr{
+    margin-top: 1em;
+    margin-bottom: -1em;
+    border-top:2px dashed $color-red;
+    width: 16em;
+    margin-left: 0;
+  }
+}
+
+/* DESIGN SYSTEM—TYPE SPECIMEN___________________________*/
+
+.type_specimen {
+  margin-top: 4em;
+
+  .row{
+  align-items: flex-start;
+  justify-content: space-between;
+  }
+  
+  .one-half{
+    margin-right: 3em;
+  }
+  img{
+    margin-top: 1em;
+  }
+}
+
+/* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
+  
+.text-centered {
+
+  a {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    /* font-size: 80%; */
+    font-family: $headingfont-family; 
+    text-decoration: none;
+    color: $color-teal;
+  }
+
+  .icon-char{
+    color: $color-teal;
+  width:2em;
+  }
+}
+
+
+
 
 // FOOTER ______________________________________
 
