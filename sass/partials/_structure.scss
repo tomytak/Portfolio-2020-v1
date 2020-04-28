@@ -149,7 +149,7 @@ height: auto;
   }
 
   ul li {
-    border-left:2px dashed $color-red;
+    // border-left:2px dashed $color-red;
     display: block;
     font-family: $headingfont-family;
     padding-top: 2em;
@@ -172,7 +172,8 @@ height: auto;
 // HERO HOMEPAGE_________________________________________
 
 .home-hero{
-  background-image: url("video/tomylogo.gif");
+  background-image: url("img/tomy_logo_home.svg");
+
 }
 
 /* HERO ___________________________*/
@@ -250,14 +251,17 @@ height: auto;
 /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
   
 .text-centered {
+// margin-left: 5em;
+// margin-right: 5em;
 
   a {
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    /* font-size: 80%; */
+    font-weight: 300;
     font-family: $headingfont-family; 
     text-decoration: none;
     color: $color-teal;
+    
   }
 
   .icon-char{
@@ -271,6 +275,32 @@ height: auto;
 
 // FOOTER ______________________________________
 
-.one-third small a:hover{
-  font-weight: 700;
+.footer{
+    border-top:2px dashed $color-red;
+margin-bottom: 5em;
+
+  .row{
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .one-third{
+      text-align: left;
+      margin-top: 2em;
+      margin-right: 0;
+      text-align: center;
+
+      h1{
+        margin-top:.3em;
+        font-weight: 700;
+      }
+      p{
+        
+        color: $color-teal;
+      }
+      a{
+        text-decoration: none;
+      }
+  }
+  }
+
 }

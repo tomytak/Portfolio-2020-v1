@@ -62,21 +62,23 @@ font-style: normal;
   margin-bottom: .5em;
 }
 
-// TYPE SPECIMEN_______________________________
+// headings style_______________________________
 .mainhead {
   font-size: 6em;
-  margin-bottom: 0; }
+  margin-bottom: 0; 
+}
 
 .subhead {
   font-family: $headingfont-family;
   color: $color-gray;
-  margin-bottom: 1em; }
-
+  margin-bottom: 1em; 
+}
 
 section#brand_identity, section#copywriting, section#logo, section#sketches, 
 section#logo_exploration, 
 section#hi-fi,
-section#final,section#web, section#artwork, section#motion_graphic{
+section#final,section#web, section#artwork, section#motion_graphic,
+#final_product{
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0; 
@@ -86,14 +88,50 @@ section.sketches, section#artwork, section.styletiles {
   padding-top: 0; 
 }
 
-#copywriting h1, #logo h1, #sketches h1,#brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #final h1 {
+#copywriting h1, #logo h1, #sketches h1,#brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #final h1, #final_product h1 {
   font-size: 3em; 
 }
+
+// Index quote___________________
+.quote{
+  margin-top: 5em;
+  margin-bottom: 10em;
+  h1{
+    font-family: $bodyfont-family;
+    text-transform: none;
+    color: $color-teal; 
+    font-weight: 700;
+    line-height: 1.3em;
+    width: 50vw;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
   
+  }
+
+.yellow-circle{
+  border: 5px solid $color-yellow;
+  background-color: $color-white;
+  border-radius: 50%;
+  height: 1.2em;
+  width: 1.2em;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+  .underline{
+    text-decoration-style: dashed;
+    text-decoration-line: underline;
+    text-decoration-color: $color-red;
+  }
+}
+
 // HERO_____________________________________
 .hero{
   text-align: left; 
   margin-bottom: 3em;
+  // margin-left: 50%;
+  // transform: translateX(-50%);
 
   .hero_sub-info{
     color: $color-black;
@@ -150,6 +188,7 @@ section.sketches, section#artwork, section.styletiles {
     font-style: italic;
     display: block;
   }
+
   p{
     margin-top:-.5em;
     margin-right: auto; 
@@ -168,7 +207,6 @@ section.sketches, section#artwork, section.styletiles {
   }
 
   h1{
-    
     margin-top: .2em;
     font-size: 4em;
     margin-bottom: 0;
@@ -203,7 +241,7 @@ section.sketches, section#artwork, section.styletiles {
 }
 //   ________________________________________
   
-// CONQUES
+// CONQUEST
 
 .type_conquest{
 
@@ -245,3 +283,36 @@ font-weight: 700;
 font-size: 1.5em;
 color: $color-teal;
 }
+
+// work toggle
+
+  // .toggle_title_previous {
+  //   color: $color-gray;
+  //     font-style: italic;
+  //     font-family: $bodyfont-family;
+  //     font-size: .9em;
+  //   font-weight: 100;
+  //   margin-left: 3em;
+  //   margin-top: .2em;
+  //   font-style: normal;
+  //   text-transform: initial;
+  //   display: block;
+  // }
+  // .toggle_title_next{
+  //   margin-left: 4.5em;
+  //   color: $color-gray;
+  //   font-style: italic;
+  //   font-family: $bodyfont-family;
+  //   font-size: .9em;
+  // font-weight: 100;
+  // margin-top: .2em;
+  // font-style: normal;
+  // // text-transform: initial;
+  // display: block;
+  // }
+
+
+.work_toggle a:hover{
+  font-weight: 700;}
+
+  // footer

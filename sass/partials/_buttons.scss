@@ -15,16 +15,21 @@ text-transform: uppercase;
 letter-spacing: .2em;
 margin-top: 1em;
 }
-  button:hover,
-  .button:hover {
-    background-color: $color-teal;
-    color: $color-white; }
-  button.alt,
-  .button.alt {
-    color: $color-teal;
- }
-    button.alt:hover,
-    .button.alt:hover {
-      background-color:$color-teal;
-      color: $color-white;
-      border-color:$color-teal; }
+
+button:hover,
+.button:hover {
+  background-color: $color-teal;
+  color: $color-white; 
+}
+
+button.alt,
+.button.alt {
+  color: $color-teal;
+}
+
+  button.alt:hover,
+  .button.alt:hover {
+    background-color:$color-teal;
+    color: $color-white;
+    border-color:$color-teal; 
+  }

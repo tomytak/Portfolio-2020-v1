@@ -6,20 +6,6 @@
   }
 }
 
-/* UI DESIGN */
-  
-.final{
-  align-items: flex-end;
-  .row {
-    margin-bottom: .5em;
-    justify-content: space-between;
-  
-  }
-  
-  .end_product{
-    margin-top: 5em;
-  }
-}
   /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
   .objective .column,
   .wireframe .column, 
@@ -38,7 +24,7 @@
 }
   
 /* sketch */
-.sketch {
+.sketches {
   .row{
   justify-content: space-between;
   }
@@ -68,3 +54,23 @@
   }
 }
 
+/* UI DESIGN */
+  
+.final_ui{
+
+  .row {
+    margin-top: .5em;
+    margin-bottom: .5em;
+   justify-content: space-between;
+    align-items: flex-start;
+  
+
+    .one-third{
+
+    }
+  }
+  
+  .end_product{
+    margin-top: 5em;
+  }
+}

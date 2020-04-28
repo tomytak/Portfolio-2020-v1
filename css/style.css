@@ -92,7 +92,8 @@ p {
 section#brand_identity, section#copywriting, section#logo, section#sketches,
 section#logo_exploration,
 section#hi-fi,
-section#final, section#web, section#artwork, section#motion_graphic {
+section#final, section#web, section#artwork, section#motion_graphic,
+#final_product {
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0; }
@@ -100,8 +101,41 @@ section#final, section#web, section#artwork, section#motion_graphic {
 section.sketches, section#artwork, section.styletiles {
   padding-top: 0; }
 
-#copywriting h1, #logo h1, #sketches h1, #brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #final h1 {
+#copywriting h1, #logo h1, #sketches h1, #brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #final h1, #final_product h1 {
   font-size: 3em; }
+
+.quote {
+  margin-top: 5em;
+  margin-bottom: 10em; }
+  .quote h1 {
+    font-family: "utopia-std", "Garamond", "Caslon", serif;
+    text-transform: none;
+    color: #005563;
+    font-weight: 700;
+    line-height: 1.3em;
+    width: 50vw;
+    text-align: center;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .quote .yellow-circle {
+    border: 5px solid #FEC412;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 1.2em;
+    width: 1.2em;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .quote .underline {
+    -webkit-text-decoration-style: dashed;
+    text-decoration-style: dashed;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    -webkit-text-decoration-color: #CC1F3D;
+    text-decoration-color: #CC1F3D; }
 
 .hero {
   text-align: left;
@@ -216,6 +250,9 @@ section.sketches, section#artwork, section.styletiles {
   font-weight: 700;
   font-size: 1.5em;
   color: #005563; }
+
+.work_toggle a:hover {
+  font-weight: 700; }
 
 /* #BUTTONS */
 button,
@@ -341,7 +378,7 @@ body {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
-  .row {
+  .row, .row2 {
     display: -webkit-flex;
     display: -ms-flexbox;
     -webkit-justify-content: center;
@@ -411,9 +448,15 @@ body {
   .column.small:last-child {
     margin-right: 0; }
   .one-third.column.small {
-    width: 28%; } }
+    width: 28%; }
+  .page-nav ul li {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    margin-left: 0; } }
 
 /* #CLEARFIXES */
+.row2:after,
 .group:after,
 .row:after,
 .container:after,
@@ -544,7 +587,6 @@ section {
   .page-nav ul {
     margin: 0; }
   .page-nav ul li {
-    border-left: 2px dashed #CC1F3D;
     display: block;
     font-family: "Nobel", "Roboto Condensed", sans-serif;
     padding-top: 2em;
@@ -559,7 +601,7 @@ section {
     font-weight: 700; }
 
 .home-hero {
-  background-image: url("video/tomylogo.gif"); }
+  background-image: url("img/tomy_logo_home.svg"); }
 
 /* HERO ___________________________*/
 .hero .proj_summary {
@@ -620,7 +662,7 @@ section {
 .text-centered a {
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  /* font-size: 80%; */
+  font-weight: 300;
   font-family: "Nobel", "Roboto Condensed", sans-serif;
   text-decoration: none;
   color: #005563; }
@@ -629,8 +671,28 @@ section {
   color: #005563;
   width: 2em; }
 
-.one-third small a:hover {
-  font-weight: 700; }
+.footer {
+  border-top: 2px dashed #CC1F3D;
+  margin-bottom: 5em; }
+  .footer .row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .footer .row .one-third {
+      text-align: left;
+      margin-top: 2em;
+      margin-right: 0;
+      text-align: center; }
+      .footer .row .one-third h1 {
+        margin-top: .3em;
+        font-weight: 700; }
+      .footer .row .one-third p {
+        color: #005563; }
+      .footer .row .one-third a {
+        text-decoration: none; }
 
 /* Main Site Section (Main Content Area) */
 /* Page Fade-ins */
@@ -703,19 +765,6 @@ fade-in {
 .hero .proj_summary {
   background-color: #FFCD00; }
 
-/* UI DESIGN */
-.final {
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end; }
-  .final .row {
-    margin-bottom: .5em;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .final .end_product {
-    margin-top: 5em; }
-
 /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
 .objective .column,
 .wireframe .column,
@@ -729,7 +778,7 @@ fade-in {
   margin-right: 0; }
 
 /* sketch */
-.sketch .row {
+.sketches .row {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
@@ -745,6 +794,20 @@ fade-in {
 /* ANIMATIONS */
 .animation .one-third {
   margin-right: 0; }
+
+/* UI DESIGN */
+.final_ui .row {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.final_ui .end_product {
+  margin-top: 5em; }
 
 .hero .row {
   margin-bottom: 2em; }
