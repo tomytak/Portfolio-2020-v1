@@ -35,11 +35,16 @@ body {
 
 /* HEADING*/
 h1, h2, h3 {
-  font-family: "Nobel", "Roboto Condensed", sans-serif;
   margin: .5em 0;
   font-weight: 100;
   line-height: 1;
   color: #005563; }
+
+h1, .small-title, .caption {
+  font-family: "Nobel", "Roboto Condensed", sans-serif; }
+
+h2, h3, p {
+  font-family: "utopia-std", "Garamond", "Caslon", serif; }
 
 h1 {
   font-size: 3em;
@@ -49,28 +54,26 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font-family: "Nobel", "Roboto Condensed", sans-serif;
+  text-transform: none;
+  margin-top: .5em;
+  margin-bottom: .2em;
   font-size: 2em;
-  line-height: 1;
+  line-height: 1.4;
   font-weight: 700;
   color: #005563; }
 
 h3 {
-  font-family: "utopia-std", "Garamond", "Caslon", serif;
   font-size: 1.5em;
   line-height: 1.4;
   font-weight: 700;
   color: #005563; }
 
 p {
-  font-family: "utopia-std", "Garamond", "Caslon", serif;
   font-size: 1em;
-  max-width: 35em;
   font-weight: 100;
   font-style: normal; }
 
 .small-title {
-  font-family: "Nobel", "Roboto Condensed", sans-serif;
   font-size: 1em;
   max-width: 35em;
   font-weight: 300;
@@ -79,6 +82,12 @@ p {
   letter-spacing: .2em;
   color: #005563;
   margin-bottom: .5em; }
+
+.caption {
+  font-size: .8em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-weight: 300; }
 
 .mainhead {
   font-size: 6em;
@@ -92,7 +101,7 @@ p {
 section#brand_identity, section#copywriting, section#logo, section#sketches,
 section#logo_exploration,
 section#hi-fi,
-section#final, section#web, section#artwork, section#motion_graphic,
+section#final, section#web, section#artwork, section#motion_graphic, section#style_guide,
 #final_product {
   padding-top: 3em;
   padding-bottom: 0;
@@ -101,7 +110,7 @@ section#final, section#web, section#artwork, section#motion_graphic,
 section.sketches, section#artwork, section.styletiles {
   padding-top: 0; }
 
-#copywriting h1, #logo h1, #sketches h1, #brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #final h1, #final_product h1 {
+#copywriting h1, #logo h1, #sketches h1, #brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
   font-size: 3em; }
 
 .quote {
@@ -119,16 +128,6 @@ section.sketches, section#artwork, section.styletiles {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
-  .quote .yellow-circle {
-    border: 5px solid #FEC412;
-    background-color: #fff;
-    border-radius: 50%;
-    height: 1.2em;
-    width: 1.2em;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%); }
   .quote .underline {
     -webkit-text-decoration-style: dashed;
     text-decoration-style: dashed;
@@ -136,6 +135,18 @@ section.sketches, section#artwork, section.styletiles {
     text-decoration-line: underline;
     -webkit-text-decoration-color: #CC1F3D;
     text-decoration-color: #CC1F3D; }
+
+.about-me h1 {
+  font-weight: 700; }
+
+.about-me .row .one-half {
+  margin: 0 auto; }
+
+.bold_body {
+  font-weight: 700; }
+
+.body_gray {
+  color: #999; }
 
 .hero {
   text-align: left;
@@ -149,11 +160,6 @@ section.sketches, section#artwork, section.styletiles {
     font-weight: 700;
     margin: 0;
     padding: 0; }
-  .hero h2 {
-    font-family: "utopia-std", "Garamond", "Caslon", serif;
-    text-transform: none;
-    margin-top: .5em;
-    margin-bottom: .2em; }
   .hero h3 {
     font-weight: 300;
     color: black;
@@ -218,26 +224,21 @@ section.sketches, section#artwork, section.styletiles {
   font-size: 3em;
   margin-bottom: -1em; }
 
-.type_conquest h1 {
+.type_conquest h1, .type_conquest h2, .type_conquest h3 {
   font-family: "franklin-gothic-urw-cond", "Roboto Condensed", sans-serif;
-  font-size: 4em;
-  font-weight: 700;
-  margin-bottom: 0;
   text-transform: uppercase;
+  font-weight: 700;
   color: black; }
+
+.type_conquest h1 {
+  font-size: 4em;
+  margin-bottom: 0; }
 
 .type_conquest h2 {
-  font-family: "franklin-gothic-urw-cond", "Roboto Condensed", sans-serif;
-  font-size: 2em;
-  font-weight: 700;
-  color: black; }
+  font-size: 2em; }
 
 .type_conquest h3 {
-  font-family: "franklin-gothic-urw-cond", "Roboto Condensed", sans-serif;
-  font-size: 1.5em;
-  font-weight: 700;
-  color: black;
-  text-transform: uppercase; }
+  font-size: 1.5em; }
 
 .type_conquest p {
   font-family: "Franklin Gothic URW", sans-serif;
@@ -246,10 +247,27 @@ section.sketches, section#artwork, section.styletiles {
   line-height: 1.5;
   max-width: 24em; }
 
-.logo_emphasis {
-  font-weight: 700;
-  font-size: 1.5em;
-  color: #005563; }
+.brand_strategy h2, .brand_strategy h3, .copywriting_conquest h2, .copywriting_conquest h3 {
+  font-family: "Nobel", "Roboto Condensed", sans-serif;
+  text-transform: uppercase; }
+
+.brand_strategy h3, .copywriting_conquest h3 {
+  font-weight: 300; }
+
+.toggle_title {
+  color: #999;
+  font-style: italic;
+  font-family: "utopia-std", "Garamond", "Caslon", serif;
+  font-size: .9em;
+  font-weight: 100;
+  margin-top: .2em;
+  font-style: normal;
+  text-transform: uppercase;
+  display: block;
+  opacity: 1; }
+
+.next a:hover, .next .toggle_title_next {
+  opacity: 0; }
 
 .work_toggle a:hover {
   font-weight: 700; }
@@ -341,8 +359,7 @@ body {
 
 .container {
   width: 90%;
-  margin: 0 auto;
-  /* padding: 0 4%; */ }
+  margin: 0 auto; }
 
 @media (min-width: 1050px) {
   .container {
@@ -412,6 +429,8 @@ body {
     -ms-flex-positive: 1;
     /* flex-grow: 1; */
     /* margin: 1%; */ }
+  .one-whole {
+    width: 100%; }
   .one-half {
     width: 48%; }
   .one-third {
@@ -439,7 +458,9 @@ body {
   .two-thirds {
     width: 64.6666%; }
   .three-fourths {
-    width: 73%; } }
+    width: 73%; }
+  .quote h1 {
+    font-size: 2em; } }
 
 @media (max-width: 768px) {
   .column.small {
@@ -453,7 +474,9 @@ body {
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
-    margin-left: 0; } }
+    margin-left: 0; }
+  .quote h1 {
+    font-size: 1.5em; } }
 
 /* #CLEARFIXES */
 .row2:after,
@@ -599,9 +622,11 @@ section {
     padding-top: 0; }
   .page-nav ul li:hover, .page-nav a.active {
     font-weight: 700; }
-
-.home-hero {
-  background-image: url("img/tomy_logo_home.svg"); }
+  .page-nav .side-nav ul li a:after {
+    visibility: visible;
+    -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.5, 1);
+    -o-transition: all 0.3s cubic-bezier(0.6, 0, 0.5, 1);
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.5, 1); }
 
 /* HERO ___________________________*/
 .hero .proj_summary {
@@ -624,9 +649,9 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  .objective .one-third ul {
+  .objective ul {
     padding-top: 1em; }
-    .objective .one-third ul li:before {
+    .objective ul li:before {
       content: "\26AC";
       color: #FEC412;
       display: inline-block;
@@ -634,8 +659,7 @@ section {
       margin-left: -2.5em;
       padding-top: 0; }
   .objective .two-thirds {
-    margin-left: 3em;
-    max-width: 25em; }
+    margin: 0; }
   .objective hr {
     margin-top: 1em;
     margin-bottom: -1em;
@@ -659,17 +683,27 @@ section {
     margin-top: 1em; }
 
 /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
-.text-centered a {
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-weight: 300;
-  font-family: "Nobel", "Roboto Condensed", sans-serif;
-  text-decoration: none;
-  color: #005563; }
-
-.text-centered .icon-char {
-  color: #005563;
-  width: 2em; }
+.text-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .text-centered .arrow {
+    padding: .2em;
+    font-size: 2em; }
+  .text-centered a {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 300;
+    font-family: "Nobel", "Roboto Condensed", sans-serif;
+    text-decoration: none;
+    color: #005563; }
+  .text-centered a:hover {
+    font-weight: 700; }
 
 .footer {
   border-top: 2px dashed #CC1F3D;
@@ -682,17 +716,22 @@ section {
     -ms-flex-align: start;
     align-items: flex-start; }
     .footer .row .one-third {
-      text-align: left;
       margin-top: 2em;
       margin-right: 0;
       text-align: center; }
-      .footer .row .one-third h1 {
-        margin-top: .3em;
-        font-weight: 700; }
-      .footer .row .one-third p {
-        color: #005563; }
-      .footer .row .one-third a {
-        text-decoration: none; }
+    .footer .row .one-third {
+      margin-top: 2em;
+      margin-right: 0;
+      text-align: center; }
+    .footer .row h1 {
+      margin-top: .3em;
+      font-weight: 700; }
+    .footer .row p {
+      color: #005563;
+      text-align: center;
+      margin: 0 auto; }
+    .footer .row a {
+      text-decoration: none; }
 
 /* Main Site Section (Main Content Area) */
 /* Page Fade-ins */
@@ -762,7 +801,7 @@ fade-in {
     animation-delay: 1s; }
 
 /* HERO */
-.hero .proj_summary {
+.hero .dino {
   background-color: #FFCD00; }
 
 /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
@@ -809,12 +848,81 @@ fade-in {
 .final_ui .end_product {
   margin-top: 5em; }
 
-.hero .row {
-  margin-bottom: 2em; }
+.hero .conquest {
+  background-color: #e2d5bb; }
 
-.hero .two-thirds {
-  margin-right: 2em; }
-
-.hero .one-third img {
+.conquest-grid .row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-line-pack: justify;
   align-content: space-between; }
+
+.conquest-grid .one-third {
+  -webkit-box-align: space-between;
+  -ms-flex-align: space-between;
+  align-items: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border: 1px solid red; }
+
+.conquest-grid .one-whole {
+  padding: 0;
+  margin: 0; }
+  .conquest-grid .one-whole img {
+    padding: 0; }
+
+.brand_strategy .row {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .brand_strategy .row .one-third ul {
+    padding-left: 0; }
+  .brand_strategy .row .one-third ul li {
+    list-style: none; }
+  .brand_strategy .row .two-thirds p {
+    margin-bottom: 3em;
+    max-width: 30vw; }
+
+.home-hero {
+  background-image: url("img/tomy_logo_home.svg"); }
+
+.quote .yellow-circle {
+  border: 5px solid #FEC412;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 1.2em;
+  width: 1.2em;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.about-me {
+  padding-top: 0; }
+  .about-me .yellow-circle {
+    border: 5px solid #FEC412;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 1.2em;
+    width: 1.2em;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-bottom: 2em; }
+  .about-me .row {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .about-me .about-sub-info {
+    margin-top: 2em; }
+    .about-me .about-sub-info .one-third {
+      padding: 1.5em; }
