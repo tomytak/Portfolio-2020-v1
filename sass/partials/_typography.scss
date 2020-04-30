@@ -90,15 +90,15 @@ font-style: normal;
 .logo_exploration, 
 #artwork,
 section#hi-fi,
-section#final,section#web, section#artwork, section#motion_graphic,#style_guide, section.type_specimen,
-#final_product, #brand_identity, .bottle_packaging {
+section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
+#final_product, #brand_identity, .bottle_packaging, #hi-fi {
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0; 
   border: 1px solid red;
 }
 
-section.type_specimen, section.sketches,  section#styletiles, #hi-fi, section.final_image_bottom, section.brand_strategy, section.logo, .copywriting {
+section.type_specimen, section.sketches,  section#styletiles, section.final_image_bottom, section.brand_strategy, section.logo, .copywriting, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui {
   padding-top: 0; 
   border: 3px solid green;
 }
