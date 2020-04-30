@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* #BASE CSS (Initital Setup)
 ---------------------------------
     #BASE START
@@ -98,17 +97,20 @@ p {
   color: #999;
   margin-bottom: 1em; }
 
-section#brand_identity, section#copywriting, section#logo, section#sketches,
-section#logo_exploration,
+#styletiles, section#brand_identity, section#copywriting, section#sketches, #logo,
+.logo_exploration,
+#artwork,
 section#hi-fi,
-section#final, section#web, section#artwork, section#motion_graphic, section#style_guide,
-#final_product {
+section#final, section#web, section#artwork, section#motion_graphic, #style_guide, section.type_specimen,
+#final_product, #brand_identity, .bottle_packaging {
   padding-top: 3em;
   padding-bottom: 0;
-  margin: 0; }
+  margin: 0;
+  border: 1px solid red; }
 
-section.sketches, section#artwork, section.styletiles {
-  padding-top: 0; }
+section.type_specimen, section.sketches, section#styletiles, #hi-fi, section.final_image_bottom, section.brand_strategy, section.logo, .copywriting {
+  padding-top: 0;
+  border: 3px solid green; }
 
 #copywriting h1, #logo h1, #sketches h1, #brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
   font-size: 3em; }
@@ -221,8 +223,7 @@ section.sketches, section#artwork, section.styletiles {
   font-weight: 400; }
 
 #styletiles .sectionhead {
-  font-size: 3em;
-  margin-bottom: -1em; }
+  font-size: 3em; }
 
 .type_conquest h1, .type_conquest h2, .type_conquest h3 {
   font-family: "franklin-gothic-urw-cond", "Roboto Condensed", sans-serif;
@@ -231,6 +232,7 @@ section.sketches, section#artwork, section.styletiles {
   color: black; }
 
 .type_conquest h1 {
+  margin-top: .2em;
   font-size: 4em;
   margin-bottom: 0; }
 
@@ -247,12 +249,15 @@ section.sketches, section#artwork, section.styletiles {
   line-height: 1.5;
   max-width: 24em; }
 
-.brand_strategy h2, .brand_strategy h3, .copywriting_conquest h2, .copywriting_conquest h3 {
+.brand_strategy h2, .brand_strategy h3, .copywriting h2, .copywriting h3 {
   font-family: "Nobel", "Roboto Condensed", sans-serif;
   text-transform: uppercase; }
 
-.brand_strategy h3, .copywriting_conquest h3 {
+.brand_strategy h3, .copywriting h3 {
   font-weight: 300; }
+
+.brand_strategy .row .two-thirds, .copywriting .row .two-thirds {
+  padding-left: 6em; }
 
 .toggle_title {
   color: #999;
@@ -363,7 +368,9 @@ body {
 
 @media (min-width: 1050px) {
   .container {
-    max-width: 1050px; } }
+    max-width: 1050px; }
+    .container .quote h1 {
+      font-size: 3em; } }
 
 @media (min-width: 1250px) {
   body {
@@ -407,7 +414,7 @@ body {
     -webkit-box-align: center;
     align-items: center;
     /* margin-left: -1%;
-      margin-right: -1%;  */ }
+    margin-right: -1%;  */ }
   .row.swap {
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
@@ -460,7 +467,15 @@ body {
   .three-fourths {
     width: 73%; }
   .quote h1 {
-    font-size: 2em; } }
+    font-size: 2em; }
+  .type_specimen .type_scale {
+    margin-right: 2em; }
+  .type_specimen .color_study {
+    margin-left: 2em; }
+    .type_specimen .color_study img {
+      margin-top: 1.3em; }
+  .logo .row .final_logo {
+    margin-right: 6em; } }
 
 @media (max-width: 768px) {
   .column.small {
@@ -476,7 +491,25 @@ body {
     transform: rotate(270deg);
     margin-left: 0; }
   .quote h1 {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+  .type_specimen .type_scale {
+    margin-right: 0; }
+  .type_specimen .color_study {
+    margin-top: 2em;
+    margin-left: 0; }
+    .type_specimen .color_study img {
+      margin-top: 1.5em; }
+  .brand_strategy .row .one-third h2, .copywriting .row .one-third h2 {
+    font-size: 1.5em; }
+  .brand_strategy .row .two-thirds, .copywriting .row .two-thirds {
+    padding: 0;
+    margin-top: 2em; }
+    .brand_strategy .row .two-thirds h3, .copywriting .row .two-thirds h3 {
+      font-size: 1.3em; }
+    .brand_strategy .row .two-thirds p, .copywriting .row .two-thirds p {
+      margin-bottom: 0; }
+  .logo .row .final_logo {
+    margin-right: 0; } }
 
 /* #CLEARFIXES */
 .row2:after,
@@ -638,7 +671,8 @@ section {
 
 /* OBJECTIVE _______________________*/
 .objective {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0; }
   .objective .row {
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -667,7 +701,7 @@ section {
     width: 16em;
     margin-left: 0; }
 
-/* DESIGN SYSTEM—TYPE SPECIMEN___________________________*/
+/* DESIGN SYSTEM___________________________*/
 .type_specimen {
   margin-top: 4em; }
   .type_specimen .row {
@@ -677,10 +711,11 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  .type_specimen .one-half {
-    margin-right: 3em; }
   .type_specimen img {
     margin-top: 1em; }
+
+.final_product {
+  margin-top: 0; }
 
 /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
 .text-centered {
@@ -689,7 +724,10 @@ section {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 2em; }
   .text-centered .arrow {
     padding: .2em;
     font-size: 2em; }
@@ -825,10 +863,14 @@ fade-in {
 /* illustrator */
 .illustrator .two-thirds {
   margin-right: 0; }
+  .illustrator .two-thirds video {
+    margin-top: .5em; }
 
 /* after effects */
 .aftereffects .one-third {
   margin-right: 0; }
+  .aftereffects .one-third video {
+    margin-top: .5em; }
 
 /* ANIMATIONS */
 .animation .one-third {
@@ -845,9 +887,6 @@ fade-in {
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.final_ui .end_product {
-  margin-top: 5em; }
-
 .hero .conquest {
   background-color: #e2d5bb; }
 
@@ -857,14 +896,11 @@ fade-in {
   justify-content: space-between;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-line-pack: justify;
-  align-content: space-between; }
+  align-items: flex-start; }
 
 .conquest-grid .one-third {
-  -webkit-box-align: space-between;
-  -ms-flex-align: space-between;
-  align-items: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -876,20 +912,52 @@ fade-in {
   .conquest-grid .one-whole img {
     padding: 0; }
 
-.brand_strategy .row {
+.brand_strategy .row, .copywriting .row {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .brand_strategy .row .one-third ul {
-    padding-left: 0; }
-  .brand_strategy .row .one-third ul li {
+  .brand_strategy .row ul li, .copywriting .row ul li {
     list-style: none; }
-  .brand_strategy .row .two-thirds p {
-    margin-bottom: 3em;
-    max-width: 30vw; }
+  .brand_strategy .row .one-third ul, .copywriting .row .one-third ul {
+    padding-left: 0; }
+  .brand_strategy .row .two-thirds ul, .copywriting .row .two-thirds ul {
+    padding-left: 0; }
+  .brand_strategy .row .two-thirds h3, .copywriting .row .two-thirds h3 {
+    padding-bottom: 1.5em; }
+  .brand_strategy .row .two-thirds p, .copywriting .row .two-thirds p {
+    margin-bottom: 2em; }
+
+.copywriting {
+  padding-top: 0; }
+
+.orange {
+  color: #CB7E30; }
+
+.logo .row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.logo .final_logo {
+  margin-top: 2em; }
+
+.logo_exploration {
+  padding-top: 0; }
+  .logo_exploration .row {
+    margin-top: 2em;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+
+.illustration_explain {
+  margin: 0 auto;
+  width: 30vw; }
 
 .home-hero {
   background-image: url("img/tomy_logo_home.svg"); }

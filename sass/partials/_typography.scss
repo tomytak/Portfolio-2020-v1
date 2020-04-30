@@ -86,18 +86,21 @@ font-style: normal;
   margin-bottom: 1em; 
 }
 
-section#brand_identity, section#copywriting, section#logo, section#sketches, 
-section#logo_exploration, 
+#styletiles, section#brand_identity, section#copywriting,  section#sketches, #logo,
+.logo_exploration, 
+#artwork,
 section#hi-fi,
-section#final,section#web, section#artwork, section#motion_graphic,section#style_guide,
-#final_product{
+section#final,section#web, section#artwork, section#motion_graphic,#style_guide, section.type_specimen,
+#final_product, #brand_identity, .bottle_packaging {
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0; 
+  border: 1px solid red;
 }
 
-section.sketches, section#artwork, section.styletiles {
+section.type_specimen, section.sketches,  section#styletiles, #hi-fi, section.final_image_bottom, section.brand_strategy, section.logo, .copywriting {
   padding-top: 0; 
+  border: 3px solid green;
 }
 
 #copywriting h1, #logo h1, #sketches h1,#brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
@@ -223,6 +226,7 @@ section.sketches, section#artwork, section.styletiles {
     text-transform: uppercase;
     color: $color-black;
     font-weight: 700; 
+
   }
 
   h1{
@@ -256,7 +260,6 @@ section.sketches, section#artwork, section.styletiles {
 
 #styletiles .sectionhead{
   font-size: 3em;
-  margin-bottom: -1em;
 }
 //   ________________________________________
   
@@ -271,6 +274,7 @@ h1, h2, h3{
 }
 
   h1{
+    margin-top: .2em;
     font-size: 4em; 
     margin-bottom: 0;
   }
@@ -292,7 +296,7 @@ h1, h2, h3{
   }
 }
 
-.brand_strategy, .copywriting_conquest{
+.brand_strategy, .copywriting{
   h2, h3{
     font-family: $headingfont-family;
     text-transform: uppercase;
@@ -300,7 +304,14 @@ h1, h2, h3{
   h3{
     font-weight: 300;
   }
-}
+
+    .row{
+      .two-thirds{
+        padding-left: 6em;   
+      }
+    }
+  }
+
 
 
 

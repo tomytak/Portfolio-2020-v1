@@ -10,15 +10,15 @@
   .row{
       justify-content: space-between;
       align-items: flex-start;
-      align-content: space-between;
   }
     .one-third{
-align-items: space-between;
+        
+        align-content: space-between;
 align-items: flex-end;
 border: 1px solid red;
     }
     .one-whole{
-        
+       
         padding: 0;
         margin: 0;
     img{
@@ -28,29 +28,72 @@ border: 1px solid red;
 }
 
 
-// BRAND STRATEGY_______________
+// BRAND STRATEGY & COPYWRITING_______________
 
-.brand_strategy{
+.brand_strategy, .copywriting{
   
     .row{
       align-items: flex-start;
       justify-content: space-between;
 
+      ul li{
+        list-style: none;
+    }
         .one-third{
             ul{
                 padding-left: 0;
-            }
-            ul li{
-                list-style: none;
+
             }
         }
 
         .two-thirds{
+            ul{
+                padding-left: 0;
+            }
 
+            h3{
+                padding-bottom: 1.5em;
+            }
             p{
-                margin-bottom: 3em;
-               max-width: 30vw;
+                margin-bottom: 2em;  
             }
         }
     }
+}
+
+.copywriting{
+    padding-top: 0;
+}
+
+// design system_____________________
+.orange{
+    color: $color-conquest-orange;
+}
+
+// illustrations__________
+.logo{
+    .row{
+        justify-content: space-between;
+    }
+    .final_logo{
+        margin-top: 2em;
+    }  
+}
+ 
+.logo_exploration{
+    padding-top: 0;
+    .row{
+        margin-top: 2em;
+        justify-content: space-between;
+        align-items: flex-end;
+
+    
+    }
+}  
+
+// ILLUSTRATIONS_____________________
+
+.illustration_explain{
+    margin:0 auto;
+    width: 30vw;
 }

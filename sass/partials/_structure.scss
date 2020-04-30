@@ -195,6 +195,7 @@ height: auto;
   
 .objective { 
   margin: 0 auto;
+  padding: 0;
 
   .row{
     align-items: flex-start;
@@ -233,7 +234,7 @@ height: auto;
   }
 }
 
-/* DESIGN SYSTEM—TYPE SPECIMEN___________________________*/
+/* DESIGN SYSTEM___________________________*/
 
 .type_specimen {
   margin-top: 4em;
@@ -243,12 +244,14 @@ height: auto;
   justify-content: space-between;
   }
   
-  .one-half{
-    margin-right: 3em;
-  }
   img{
     margin-top: 1em;
   }
+}
+
+// FINAL PRODUCT____________________________
+.final_product{
+  margin-top: 0;
 }
 
 /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
@@ -256,6 +259,9 @@ height: auto;
 .text-centered {
 display: flex;
 justify-content: space-between;
+padding-top: 0;
+margin-top: 0;
+margin-bottom: 2em;
 
 .arrow{
   padding: .2em;
