@@ -86,19 +86,19 @@ font-style: normal;
   margin-bottom: 1em; 
 }
 
-#styletiles, section#brand_identity, section#copywriting,  section#sketches, #logo,
+#styletiles, section#brand_identity,   section#sketches, #logo,
 .logo_exploration, 
 #artwork,
 section#hi-fi,
 section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
-#final_product, #brand_identity, .bottle_packaging, #hi-fi {
+#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns{
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0; 
   border: 1px solid red;
 }
 
-section.type_specimen, section.sketches,  section#styletiles, section.final_image_bottom, section.brand_strategy, section.logo, .copywriting, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui {
+ section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging{
   padding-top: 0; 
   border: 3px solid green;
 }

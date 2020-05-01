@@ -126,8 +126,7 @@
                             <p><em>What-o-Saur</em> creates a visually stimulating experience through custom
                                 illustrations, animations, buttons, and sounds. The First Person Narrative allows for
                                 personalized copywriting while effectively communicating facts about
-                                each&nbsp;dinosaur. 
-
+                                each&nbsp;dinosaur.
                         </div>
                     </div>
                 </section>
@@ -392,17 +391,37 @@
                     </div>
                 </footer>
 
-                <!-- Smooth Scroll JS -->
-                <script src="js/smooth-scroll.polyfills.min.js"></script>
-                <script>
-                    var scroll = new SmoothScroll('a[href*="#"]');
-                </script>
+
         </main>
 
 
         <!-- MAIN JS -->
         <script src="js/script.js"></script>
         <script src="js/index.js"></script>
+
+        <!-- Smooth Scroll JS -->
+        <script src="js/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+
+        <!-- Swiper -->
+        <!-- Swiper JS -->
+        <script src="js/swiper/package/js/swiper.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+
+
+        </script>
     </body>
 
 </html>

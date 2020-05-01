@@ -1,11 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
-
-
-
-
-
   // reveal point from bottom and top of the window
   var revealerpoint = 150;
   window.addEventListener('scroll', reveal);
@@ -46,14 +40,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
   };
-
-
-
-
-
-
 });
-
-
-
-

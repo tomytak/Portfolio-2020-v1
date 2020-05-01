@@ -6,32 +6,33 @@
 
 // CONQUEST VIDEO PHOTO GRID________
 .conquest-grid{
-//   margin-bottom: 3em;
+padding-top: 5em;
+margin: 0 auto;
   .row{
       justify-content: space-between;
-      align-items: flex-start;
+     img{
+ 
+     }
+      
   }
-    .one-third{
-        
-        align-content: space-between;
-align-items: flex-end;
-border: 1px solid red;
-    }
-    .one-whole{
-       
-        padding: 0;
-        margin: 0;
-    img{
-        padding: 0;
-    }
-}
+
+    // .one-half{      
+    //   justify-content: space-between;
+    // }
+    // .one-whole{
+    //     padding: 0;
+    //     margin: 0;
+    // img{
+    //     padding: 0;
+    // }
+// }
 }
 
 
 // BRAND STRATEGY & COPYWRITING_______________
 
 .brand_strategy, .copywriting{
-  
+
     .row{
       align-items: flex-start;
       justify-content: space-between;
@@ -51,18 +52,23 @@ border: 1px solid red;
                 padding-left: 0;
             }
 
-            h3{
+            .copywriting_space{
                 padding-bottom: 1.5em;
             }
-            p{
+            .branding_space{
                 margin-bottom: 2em;  
+            }
+                                
+            .no_bottom_margin {
+                margin-bottom: 0;
             }
         }
     }
 }
 
-.copywriting{
+.copywriting .brand_strategy{
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 // design system_____________________
@@ -70,7 +76,7 @@ border: 1px solid red;
     color: $color-conquest-orange;
 }
 
-// illustrations__________
+// logo__________
 .logo{
     .row{
         justify-content: space-between;
@@ -93,7 +99,53 @@ border: 1px solid red;
 
 // ILLUSTRATIONS_____________________
 
-.illustration_explain{
-    margin:0 auto;
-    width: 30vw;
+.bottle_packaging, .conquest_patterns{
+    .row{
+        margin-top: .5em;
+        justify-content: space-between;
+    }
 }
+
+.space_above{
+    margin-top: 2em;
+}
+
+.illustrations{
+    .row{
+        justify-content: space-evenly;
+        margin: 0 auto;
+.one-half{
+  padding-left:5em;
+  padding-right:5em;
+  padding-top:2em;
+}
+    }
+}
+
+.conquest_patterns, .logo_exploration{
+    margin-bottom: 2em;
+}
+
+
+// style guide________________
+
+.style_guide{
+    background-color: #e2d5bb;
+    
+    .row{
+padding-left: 3em; 
+        justify-content: space-between; 
+        padding-right: 3em; 
+        
+        .column{
+            padding: 1em;
+        }
+    }
+}
+// final packaging_________
+.final_packaging{
+    .row{
+        justify-content: space-between;
+    }
+}
+

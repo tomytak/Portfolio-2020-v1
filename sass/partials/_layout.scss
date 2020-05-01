@@ -26,3 +26,32 @@ body {
   padding: 0 4%;
   margin: 0 auto;
  }
+
+//  swiper_________
+.swiper-container{
+  margin-bottom: 0;
+  .swiper-slide{
+    padding-left: 4em;
+    padding-right: 4em;
+   
+
+    a{
+      text-decoration: none;
+      color: $color-teal;
+    }
+  }
+
+  .swiper-button-prev, .swiper-button-next{
+    color: $color-red;
+    --swiper-navigation-size:2em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+  }
+
+  .swiper-pagination{
+    --swiper-theme-color: #CC1F3D;
+    position: relative;
+    margin-top: 2em;
+  }
+}

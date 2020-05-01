@@ -11,6 +11,8 @@
         <!-- MAIN CSS -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
 
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="js/swiper/package/css/swiper.min.css">
 
         <!--VIEWPORT FOR MOBILE-->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -53,21 +55,21 @@
 
         <main class="site-main">
 
-            <!-- <section class="page-nav">
+            <section class="page-nav">
                 <ul>
                     <li>
-                        <a href="web-site.html#styletiles">Design System</a>
+                        <a href="#styletiles">Design System</a>
                     </li>
 
                     <li>
-                        <a href="web-site.html#artwork">Artwork</a>
+                        <a href="#sketches">Sketches</a>
                     </li>
 
                     <li>
-                        <a href="web-site.html#final_designs">Final Designs</a>
+                        <a href="#final_product">Final Designs</a>
                     </li>
                 </ul>
-            </section> -->
+            </section>
 
             <div class="container">
                 <div class="hero">
@@ -86,157 +88,251 @@
                         </div>
                     </div>
 
-                    <h1>McDonalds Graphics</h1>
-                    <p class="hero_sub-info"><em>Graphics</em></p>
+                    <div class="proj_summary mcd">
+                        <p class="hero_sub-info"><em>Graphics</em></p>
+
+                        <h1>McDonalds Graphics</h1>
+
+                        <h2>Inspiring exceptional quality
+                            customer&nbsp;service</h2>
+                        <h3>McDonald’s was in need of motivational graphics to be used on swag for employees
+                            to heighten the experience of&nbsp;customers.
+                        </h3>
+                    </div>
+                </div>
+
+                <section class="objective">
                     <div class="row">
-                        <div class="one-third">
+                        <div class="one-third column">
                             <p class="hero_sub-info_title">skills</p>
                             <hr>
                             <ul>
-                                <li class="hero_sub-info">Illustration</li>
+                                <li class="hero_sub-info">Concept Sketches</li>
+                                <li class="hero_sub-info">Vector Illustration</li>
                                 <li class="hero_sub-info">Typography</li>
                                 <li class="hero_sub-info">Layout</li>
+                            </ul>
                         </div>
 
                         <div class="two-thirds column">
-                            <h2><strong>Upkeeping and inspiring quality&nbsp;service</strong></h2>
-                            <h3>A collection of motivational graphics for employees of Mcdonald's to heighten the
-                                experience of&nbsp;customers.
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                </section>
-
-                <div class="objective">
-                    <div class="row">
-
-                        <div class="one-third">
-                            <h2>Objective</h2>
-                            <p>Encourage McDonald's employees to bring customers a heightened expeirence through
-                                graphics
-                                inspired by the theme "the best&nbsp;yet."
-
-                                <!-- while satying within the
-                                visual and conceptual ideals of McDonalds. -->
+                            <span class="small-title">the challenge</span>
+                            <h3>Share the vision</h3>
+                            <p>Encourage McDonald’s employees to bring customers
+                                a heightened experience through graphics inspired by the theme “the
+                                best&nbsp;yet.”
                             </p>
                         </div>
 
                         <div class="two-thirds column">
-                            <h2>Results</h2>
-
-                            <p>Design visually engaging and playful graphics that highlight and reflect the ideals and
-                                spirit of McDonald's through
-                                different conceptual&nbsp;directions.
+                            <span class="small-title">the outcome</span>
+                            <h3>A lighthearted spin on cultural&nbsp;icons</h3>
+                            <p>The resulting graphics were simple, bold, and playful to communicate the ideals
+                                and spirit of McDonald’s. Three different conceptual directions were created to
+                                motivate employees to commit to the yearly&nbsp;campaign. </p>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div id="styletiles">
+                <div id="styletiles" class="revealer">
                     <h1 class="sectionhead">Design System</h1>
 
                     <section class="type_specimen">
                         <div class="row">
-                            <div class="one-half column type_dino">
-                                <h2 class="type_scale_title">Typography</h2>
+                            <div class="one-half column">
+                                <span class="small-title">Typography</span>
                                 <img src="img/mcd/mcd_type.svg" alt="mcd_type">
                             </div>
 
-                            <div class="one-third column">
-                                <h2>Color Pallete</h2>
+                            <div class="one-half column color_study">
+                                <span class="small-title">Color Study</span>
                                 <img src="img/mcd/mcd_color.svg" alt="mcd colors">
                             </div>
                         </div>
                     </section>
                 </div>
 
-                <div id="artwork">
+                <div id="sketches" class="revealer">
                     <h1 class="sectionhead">Sketches</h1>
 
                     <section class="sketches">
                         <div class="row">
-                            <div class="one-third column">
-                                <img src="img/sketch1.jpg" alt="dino sketch">
-                            </div>
                             <div class="two-thirds column">
-                                <p>Through exploring McDonald's graphics, I decided to highlight their individually,
-                                    timelessness,
-                                    and accolades through the most iconic items on their menu—burgers and&nbsp;fries.
+                                <img src="img/mcd/mcd_sketch.jpg" alt="mcd sketch">
+                            </div>
+                            <div class="one-third column">
+                                <p>Through exploring McDonald’s graphics, I decided to highlight their
+                                    individuality, timelessness, and accolades through the most iconic items on
+                                    their menu—burgers and&nbsp;fries.
                                 </p>
                             </div>
                         </div>
-                    </section>
-                </div>
-
-                <div id="final">
-                    <h1 class="sectionhead">Final Designs</h1>
-
-                    <section class="logo_explination">
 
                         <div class="row">
-
                             <div class="one-third column">
-                                <img src="img/mcd/fries.svg" alt="fries">
-                                <h3>Individuality</h3>
-                                <p></p>
+                                <span class="small-title">Accolades</span>
+                                <img src="img/mcd/accolades.jpg" alt="accolades">
                             </div>
 
                             <div class="one-third column">
-                                <img src="img/mcd/dark_mcd.svg" alt="dark_mcd_graphic">
-                                <h3>Timelessness</h3>
-                                <p>Retro-iconography is at the forefront of this graphic as it incorporates Viktor
-                                    Script—inspired by old, handprinted store-signs—with the modern look of Speedee
-                                    Condensed. The use of typography visually reflects on the past while appealing to
-                                    today’s audiences through a familiar and bold&nbsp;design. </p>
+                                <span class="small-title">timelessness</span>
+                                <img src="img/mcd/timelessness.jpg" alt="timelessness">
                             </div>
 
                             <div class="one-third column">
-                                <img src="img/mcd/metal.svg" alt="metal">
-                                <h3>Accolades</h3>
-                                <p>"The best yet" calls for a history of excellence. Putting a playful spin on a metal,
-                                    welcomes customers and employees to a lighthearted experience while solidifying
-                                    McDonald's&nbsp;excellence.</p>
+                                <span class="small-title">individuality</span>
+                                <img src="img/mcd/individuality.jpg" alt="individuality">
                             </div>
                         </div>
                     </section>
                 </div>
 
-                <section>
-                    <div class="row text-centered">
-                        <div class="one-third column small">
-                            <p>
-                                <a href="zoo.html">
-                                    <span class="icon-char">&olt;</span> Previous</a>
-                            </p>
+                <div id="final_product" class="revealer">
+                    <h1 class="sectionhead">Final Designs</h1>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="two-thirds column">
+                                        <img src="img/mcd/metal.svg" alt="accolade">
+                                    </div>
+                                    <div class="one-third column">
+                                        <div class="small-title">Accolades</div>
+                                        <p>“The best yet” calls for a history of excellence. This graphic welcomes
+                                            customers and employees to a lighthearted experience while solidifying
+                                            McDonald's quality by putting a playful spin on a&nbsp;metal.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="two-thirds column">
+                                        <img src="img/mcd/dark_mcd.svg" alt="timelessness">
+                                    </div>
+                                    <div class="one-third column">
+                                        <div class="small-title">timelessness</div>
+                                        <p>Retro-iconography is at the forefront of this graphic as it incorporates
+                                            Viktor Script—inspired by old, handprinted store-signs—with the modern look
+                                            of Speedee Condensed. The use of typography visually reflects on the
+                                            past while appealing to today’s audiences through a familiar and
+                                            bold&nbsp;design. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="two-thirds column">
+                                        <img src="img/mcd/fries.svg" alt="individuality">
+                                    </div>
+                                    <div class="one-third column">
+                                        <div class="small-title">individuality</div>
+                                        <p>Innovative and adaptable approaches to food and food-service—along with its
+                                            celebrated past—allow McDonald's to make their mark and stand-out from the
+                                            crowd. This is shown through their iconic fries breaking uniformity to
+                                            signify&nbsp;excellence.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="one-third column small">
-                            <p>
-                                <a href="index.html">
-                                    <span class="icon-char">&plusb;</span> Work</a>
-                            </p>
+
+
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+
+
+                <div class="row text-centered">
+                    <div class="one-third column small">
+                        <a class="previous" href="radiolab.html">
+                            <span class="arrow">&#8249;</span>Previous
+                            <span class="toggle_title">RADIOLAB</span>
+                        </a>
+                    </div>
+                    <div class="one-third column small">
+
+                    </div>
+                    <div class="one-third column small">
+                        <a class="next" href="dino.html">
+                            Next<span class="arrow">&#8250;</span>
+                            <span class="toggle_title">What-o-saur</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <footer class="footer">
+                    <div class="row">
+
+                        <div class="one-third column">
+                            <span class="small-title">What else do I have to&nbsp;show?</span><br>
+                            <a class="button" href="index.html">my work</a>
                         </div>
-                        <div class="one-third column small">
-                            <p>
-                                <a href="conquest.html">
-                                    <span class="icon-char">&ogt;</span> Next</a>
-                            </p>
+
+                        <div class="one-third column">
+                            <span class="small-title">Like what you&nbsp;see?</span>
+                            <h1>Let's talk!</h1>
+                            <a href>
+                                <p>tomytakdesigns@gmail.com</p>
+                            </a>
+                        </div>
+
+                        <div class="one-third column">
+                            <span class="small-title">Want to get to know me&nbsp;first?</span><br>
+                            <a class="button" href="about.html">About Me</a>
                         </div>
                     </div>
-                </section>
+                </footer>
             </div>
+
+            <!-- Smooth Scroll JS -->
+            <script src="js/smooth-scroll.polyfills.min.js"></script>
+            <script>
+                var scroll = new SmoothScroll('a[href*="#"]');
+            </script>
+
+
+        </main>
+
+
+        <!-- Swiper JS -->
+        <script src="js/swiper/package/js/swiper.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                // spaceBetween: 100,
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
+
+
+
+
+        <!-- MAIN JS -->
+        <script src="js/script.js"></script>
+        <script src="js/index.js"></script>
     </body>
-
-    <!-- Smooth Scroll JS -->
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
-    </main>
-
-
-    <!-- MAIN JS -->
-    <script src="js/script.js"></script>
-    <script src="js/index.js"></script>
-</body>
 
 </html>
