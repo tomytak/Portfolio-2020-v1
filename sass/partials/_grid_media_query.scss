@@ -34,6 +34,35 @@ body {
       width: 50vw;
     }
   }
+
+  // mcd sketches__________
+  .sketches{
+    .mcd_sketch{
+ 
+      .two-thirds{
+      padding-bottom: 2em;
+      padding-right: 5em;
+      }
+    }
+
+    .row{
+      .space-right{
+        margin-right: 2em;
+      }
+    }
+  }
+
+  // zoo final designs_________________
+// .final_zoo_explain{
+//   p{
+//   background-color: red;
+//   padding-top: 0;
+//   padding-bottom: 0;
+//   padding-right: 10em;
+//   padding-left: 10em;
+//   margin:0 auto
+//   }
+// }
 }
 
 @media (min-width: $breakpoint-large) {
@@ -43,17 +72,58 @@ body {
     max-width: $breakpoint-large; 
   
 // conquest grid_________________
-.conquest-grid{
-  width: 40vw;
-}
+    .conquest-grid{
+      width: 40vw;
+    }
 
-    // conquest illustrations_____________
+// conquest illustrations_____________
     .illustration_explain{
       margin:0 auto;
       width: 35vw;
     }
   } 
+   // mcd sketches__________
+  .sketches{
+    .mcd_sketch{
+      .two-thirds{
+      margin-right: 10em;
+      margin-bottom: 3em;
+      }
+    }
+
+    .final_sketch{
+      .one-third{
+        img{
+            padding-top: .5em;
+        }
+      }
+      .space-right{
+        margin-right: 10em; 
+      }
+    }
   }
+
+// ZOO SKETCHES____________
+  .sketches{
+    padding-bottom: 0;
+
+    .sketch_explain{
+        padding-left: 4em;
+    }
+
+    .logo_exploration{
+        margin-top:2em;
+        .row{
+            justify-content: space-between;
+        
+        img{
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+        }
+    }
+  }
+}
   
   
 /* #LARGE+ MEDIA QUERY */
@@ -62,6 +132,8 @@ body {
   body {
     font-size: 100%; /* 16px; */
   }
+
+   
 }
   
 /* Grid */
@@ -174,7 +246,7 @@ body {
     }
   }
 
-  // LOGO______________
+// LOGO______________
   .logo{
     .row{
         .final_logo{
@@ -188,10 +260,61 @@ body {
   width: 50vw;
 }
 
-  // conquest illustrations_____________
+// conquest illustrations_____________
   .illustration_explain{
     margin:0 auto;
     width: 50vw;
+  }
+
+// // mcd sketches__________
+  .sketches{
+    
+    .mcd_sketch{
+  
+      .two-thirds{
+      padding-bottom: 0;
+      padding-right: 5em;
+      }
+    }
+
+    .final_sketch{
+      margin-top:1em;
+
+      img{
+        margin-top: .5em;
+      }
+      .space-right{
+        margin-right: 6em;
+      }
+    }
+  }
+
+// zoo color study_design system_________
+    .color_study_zoo{
+      padding-left: 2.5em;
+    }
+
+// ZOO SKETCHES____________
+  .sketches{
+    padding-bottom: 0;
+ 
+    .sketch_explain{
+        margin-left: 2em;
+    }
+    
+    .logo_exploration{
+      .row{
+      margin-top: 0;
+          justify-content: space-between;
+      }
+    }
+  }
+// zoo final designs_________________
+.final_zoo_explain{
+  // background-color: blue;
+  padding-top: 0;
+  padding-bottom: 0;
+width: 30vw;
 }
 
 }
@@ -303,16 +426,69 @@ body {
     }
   }
 
-  
-// mcd swiper______________
-  .swiper-slide{
-    .row{
-      .one-third{
-       padding: 1.5em;
+   // mcd sketches__________
+  .sketches{
+    .mcd_sketch{
+      margin-bottom: 2em;
+    }
 
+    .final_sketch{
+
+      .one-third{
+  
+        margin-left: 5em;
+        margin-right: 5em;
+      }
+      .space-right{
+        margin-bottom: 1em;
       }
     }
   }
+
+// mcd swiper______________
+  #final_product{  
+    .swiper-slide{
+      .row{
+        .two-thirds{
+          margin-right:0;
+      }
+        .one-third{
+        padding: 1.5em;
+        }
+      }
+  }
+  }
+
+  // zoo color study_design system_________
+  .color_study_zoo{
+    margin-top: 1em;
+  }
+
+  // ZOO SKETCHES____________
+.sketches{
+  padding-bottom: 0;
+  
+  .sketch_explain{
+      padding-left: 0;
+  }
+  
+      .logo_exploration{
+          margin-top:2em;
+          
+          img{
+              padding-left:0;
+              padding-right: 0;
+              margin-bottom: 2em;
+          }
+      }
+  }
+
+// zoo final designs_________________
+.final_zoo_explain{
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
 
 }
 /* #CLEARFIXES_______________ */

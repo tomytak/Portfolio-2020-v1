@@ -72,6 +72,16 @@ p {
   font-weight: 100;
   font-style: normal; }
 
+.award {
+  font-family: "utopia-std", "Garamond", "Caslon", serif;
+  margin-top: .5em;
+  margin-bottom: .2em;
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #CC1F3D;
+  font-style: italic; }
+
 .small-title {
   font-size: 1em;
   max-width: 35em;
@@ -108,7 +118,7 @@ section#final, section#web, section#artwork, section#motion_graphic, #style_guid
   margin: 0;
   border: 1px solid red; }
 
-section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging {
+section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo {
   padding-top: 0;
   border: 3px solid green; }
 
@@ -394,7 +404,12 @@ body {
       font-size: 3em; }
     .container .illustration_explain {
       margin: 0 auto;
-      width: 50vw; } }
+      width: 50vw; }
+  .sketches .mcd_sketch .two-thirds {
+    padding-bottom: 2em;
+    padding-right: 5em; }
+  .sketches .row .space-right {
+    margin-right: 2em; } }
 
 @media (min-width: 1250px) {
   body {
@@ -405,7 +420,27 @@ body {
       width: 40vw; }
     .container .illustration_explain {
       margin: 0 auto;
-      width: 35vw; } }
+      width: 35vw; }
+  .sketches .mcd_sketch .two-thirds {
+    margin-right: 10em;
+    margin-bottom: 3em; }
+  .sketches .final_sketch .one-third img {
+    padding-top: .5em; }
+  .sketches .final_sketch .space-right {
+    margin-right: 10em; }
+  .sketches {
+    padding-bottom: 0; }
+    .sketches .sketch_explain {
+      padding-left: 4em; }
+    .sketches .logo_exploration {
+      margin-top: 2em; }
+      .sketches .logo_exploration .row {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .sketches .logo_exploration .row img {
+          padding-left: 2em;
+          padding-right: 2em; } }
 
 /* #LARGE+ MEDIA QUERY */
 @media (min-width: 1250px) {
@@ -510,7 +545,31 @@ body {
     width: 50vw; }
   .illustration_explain {
     margin: 0 auto;
-    width: 50vw; } }
+    width: 50vw; }
+  .sketches .mcd_sketch .two-thirds {
+    padding-bottom: 0;
+    padding-right: 5em; }
+  .sketches .final_sketch {
+    margin-top: 1em; }
+    .sketches .final_sketch img {
+      margin-top: .5em; }
+    .sketches .final_sketch .space-right {
+      margin-right: 6em; }
+  .color_study_zoo {
+    padding-left: 2.5em; }
+  .sketches {
+    padding-bottom: 0; }
+    .sketches .sketch_explain {
+      margin-left: 2em; }
+    .sketches .logo_exploration .row {
+      margin-top: 0;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .final_zoo_explain {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 30vw; } }
 
 @media (max-width: 768px) {
   .column.small {
@@ -561,8 +620,33 @@ body {
     --swiper-theme-color: #CC1F3D;
     position: relative;
     margin-top: 1em; }
-  .swiper-slide .row .one-third {
-    padding: 1.5em; } }
+  .sketches .mcd_sketch {
+    margin-bottom: 2em; }
+  .sketches .final_sketch .one-third {
+    margin-left: 5em;
+    margin-right: 5em; }
+  .sketches .final_sketch .space-right {
+    margin-bottom: 1em; }
+  #final_product .swiper-slide .row .two-thirds {
+    margin-right: 0; }
+  #final_product .swiper-slide .row .one-third {
+    padding: 1.5em; }
+  .color_study_zoo {
+    margin-top: 1em; }
+  .sketches {
+    padding-bottom: 0; }
+    .sketches .sketch_explain {
+      padding-left: 0; }
+    .sketches .logo_exploration {
+      margin-top: 2em; }
+      .sketches .logo_exploration img {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 2em; }
+  .final_zoo_explain {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0; } }
 
 /* #CLEARFIXES_______________ */
 .row2:after,
@@ -1075,9 +1159,12 @@ fade-in {
 .mcd {
   background-color: #FDBB20; }
 
-.hero .row {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.hero img {
   margin-bottom: 5em;
-  margin-top: 5em; }
+  margin-top: 6em; }
+
+#final_product .two-thirds {
+  margin-right: 3em; }
+
+.zoo {
+  background-color: #a4dd83; }

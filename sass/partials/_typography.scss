@@ -56,6 +56,17 @@ font-weight: 100;
 font-style: normal;
 }
 
+.award{
+  font-family: $bodyfont-family;
+  margin-top: .5em;
+  margin-bottom:.2em;
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-weight: 500;
+  color: $color-red; 
+  font-style: italic;
+}
+
 .small-title{
   font-size: 1em;
   max-width: 35em;
@@ -72,7 +83,6 @@ font-style: normal;
   margin-top: .5em;
   margin-bottom: .5em;
   font-weight: 300;
-
 }
 // headings style_______________________________
 .mainhead {
@@ -98,7 +108,7 @@ section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
   border: 1px solid red;
 }
 
- section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging{
+ section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo{
   padding-top: 0; 
   border: 3px solid green;
 }
