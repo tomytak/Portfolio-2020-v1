@@ -5,24 +5,20 @@
     <meta charset="utf-8" />
     <title>Tomy Takemura's Portfolio Site—What-o-Saur</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Tomy Takemura's Portfolio Site—What-o-Saur</title>
-        <!-- MAIN CSS -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- MAIN CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="js/swiper/package/css/swiper.min.css">
 
-        <!--VIEWPORT FOR MOBILE-->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--VIEWPORT FOR MOBILE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- GOOGLE FONTS -->
-        <link rel="stylesheet" href="https://use.typekit.net/xmu0mbk.css">
-        <!--adobe-->
-        <link rel="stylesheet" href="https://use.typekit.net/tpb8xnl.css">
-        <link rel="stylesheet" href="https://use.typekit.net/zys8ixn.css">
-
-    </head>
-
+    <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/xmu0mbk.css">
+    <!--adobe-->
+    <link rel="stylesheet" href="https://use.typekit.net/tpb8xnl.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zys8ixn.css">
 </head>
 
 <body>
@@ -286,8 +282,6 @@
                             </div>
                         </div>
 
-                        <!-- <meta>Button-hover animation -->
-
                         <div class="row">
                             <div class="one-third column">
                                 <img src="img/dino/para_cret1.gif" alt="animation1">
@@ -304,7 +298,6 @@
 
                 <div id="hi-fi" class="revealer">
 
-
                     <h1 class="sectionhead">Hi-fi Designs</h1>
                     <section class="prototype">
                         <span class="small-title">prototype</span>
@@ -313,33 +306,49 @@
                         </div>
                     </section>
 
-                    <section class="final_ui">
-                        <span class="small-title">UI Design</span>
-                        <div>
-                            <img src="img/dino/what-o-saur.jpg" alt="dino home">
+                    <div class="final_ui">
+                        <span class="small-title">UI Designs</span>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
 
-                            <span class="caption"><b>Home Page</b>—split-column frame to show two main classifications
-                                of&nbsp;dinosaur.
-                            </span>
+                                <!-- <div class="swiper-slide">
+                                    <a href="img/dino/what-o-saur.jpg"><img src="img/dino/what-o-saur.jpg"
+                                            alt="Home page"><span class="caption">Home Page—split-column</span></a>
+                                </div> -->
 
-                            <div class="row">
-                                <div class="two-thirds column column">
-                                    <img src="img/dino/ornith.jpg" alt="ornithopoda page">
+                                <div class="swiper-slide">
+                                    <a href="img/dino/ornith.jpg"><img src="img/dino/ornith.jpg"
+                                            alt="Ornithischia"><span class="caption">Ornithischia—Main-page</span></a>
                                 </div>
 
-                                <div class="one-third column column">
-
-                                    <img src="img/dino/argentinesaurus.jpg" alt="argentinesaurus">
-
-                                    <img src="img/dino/time.jpg" alt="cret">
-
-                                    <img src="img/dino/steggie_xray.jpg" alt="steggie page">
+                                <div class="swiper-slide">
+                                    <a href="img/dino/argentinesaurus.jpg"><img src="img/dino/argentinesaurus.jpg"
+                                            alt="argentinesaurus"><span class="caption">Sauropoda—Main-page</span></a>
                                 </div>
+
+                                <div class="swiper-slide">
+                                    <a href="img/dino/steggie_xray.jpg"><img src="img/dino/steggie_xray.jpg"
+                                            alt="stegosaurus"><span class="caption">Thyreophora—Fact page</span></a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="img/dino/time.jpg"><img src="img/dino/time.jpg" alt="cretaceous"><span
+                                            class="caption">Ornithopoda—Time-period page</span></a>
+                                </div>
+
                             </div>
-                            <span class="caption"><b>Subpages</b></span>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                    </section>
+                    </div>
                 </div>
+
+
+
+
 
                 <div id="final_product" class="revealer">
 
@@ -392,36 +401,42 @@
                 </footer>
 
 
+
+                <!-- Smooth Scroll JS -->
+                <script src="js/smooth-scroll.polyfills.min.js"></script>
+                <script>
+                    var scroll = new SmoothScroll('a[href*="#"]');
+                </script>
         </main>
 
-
-        <!-- MAIN JS -->
-        <script src="js/script.js"></script>
-        <script src="js/index.js"></script>
-
-        <!-- Smooth Scroll JS -->
-        <script src="js/smooth-scroll.polyfills.min.js"></script>
-        <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
-        </script>
-
-        <!-- Swiper -->
         <!-- Swiper JS -->
         <script src="js/swiper/package/js/swiper.js"></script>
 
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 3,
-                spaceBetween: 30,
+                slidesPerView: 1,
+                // spaceBetween: 30,
+                loop: true,
+
+                // If we need pagination
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
                 },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             });
-
-
         </script>
+
+
+        <!-- MAIN JS -->
+        <script src="js/script.js"></script>
+        <script src="js/index.js"></script>
     </body>
 
 </html>

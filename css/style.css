@@ -569,7 +569,9 @@ body {
   .final_zoo_explain {
     padding-top: 0;
     padding-bottom: 0;
-    width: 30vw; } }
+    width: 30vw; }
+  .radiolab_summary {
+    margin-right: 3em; } }
 
 @media (max-width: 768px) {
   .column.small {
@@ -646,6 +648,8 @@ body {
   .final_zoo_explain {
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 0; }
+  .radiolab_summary {
     margin-right: 0; } }
 
 /* #CLEARFIXES_______________ */
@@ -976,7 +980,7 @@ fade-in {
     animation-delay: 1s; }
 
 /* HERO */
-.hero .dino {
+.dino {
   background-color: #FFCD00; }
 
 /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
@@ -1015,15 +1019,8 @@ fade-in {
   margin-right: 0; }
 
 /* UI DESIGN */
-.final_ui .row {
-  margin-top: .5em;
-  margin-bottom: .5em;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start; }
+.final_ui img {
+  margin-top: 1em; }
 
 .hero .conquest {
   background-color: #e2d5bb; }
@@ -1168,3 +1165,16 @@ fade-in {
 
 .zoo {
   background-color: #a4dd83; }
+
+.radiolab_final_slide img {
+  margin-bottom: 1em; }
+
+.radiolab_final_slide .row {
+  margin-top: -1em; }
+
+.hero img {
+  margin-top: 1em;
+  margin-bottom: 2em; }
+
+.hero .radiolab {
+  background-color: #cde700; }

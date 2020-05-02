@@ -51,18 +51,6 @@ body {
       }
     }
   }
-
-  // zoo final designs_________________
-// .final_zoo_explain{
-//   p{
-//   background-color: red;
-//   padding-top: 0;
-//   padding-bottom: 0;
-//   padding-right: 10em;
-//   padding-left: 10em;
-//   margin:0 auto
-//   }
-// }
 }
 
 @media (min-width: $breakpoint-large) {
@@ -311,12 +299,15 @@ body {
   }
 // zoo final designs_________________
 .final_zoo_explain{
-  // background-color: blue;
   padding-top: 0;
   padding-bottom: 0;
 width: 30vw;
 }
 
+
+.radiolab_summary{
+    margin-right: 3em;
+}
 }
 
   
@@ -484,12 +475,17 @@ width: 30vw;
   }
 
 // zoo final designs_________________
-.final_zoo_explain{
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-right: 0;
-}
+  .final_zoo_explain{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+  }
 
+
+// radiolab summary_______________
+  .radiolab_summary{
+    margin-right: 0;
+  }
 }
 /* #CLEARFIXES_______________ */
 .row2:after,

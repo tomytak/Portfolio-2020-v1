@@ -18,7 +18,8 @@ $color-gray: #999;
 $color-dino-yellow: #FFCD00;
 $color-conquest-orange: #CB7E30;
 $color-mcd-yellow: #FDBB20;
-
+$color-zoo-green:  #a4dd83;
+$color-radiolab-green: #cde700;
 
 // Breakpoints
 
@@ -41,3 +42,4 @@ $breakpoint-large: 1250px;
 @import "partials/about_me.scss";
 @import "partials/mcd.scss";
 @import "partials/zoo.scss";
+@import "partials/radiolab.scss";
