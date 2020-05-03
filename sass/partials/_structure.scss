@@ -16,12 +16,12 @@ section {
 }
   
   /* HELPERS _________________________________*/
-.sectionhead {
-  font-family: $headingfont-family;
-  font-size: 1em;
-  line-height: 1;
-  text-transform: uppercase;
-  margin-bottom: 1em; }
+// .sectionhead {
+//   font-family: $headingfont-family;
+//   font-size: 1em;
+//   line-height: 1;
+//   text-transform: uppercase;
+//   margin-bottom: 1em; }
 
 .sectionhead:after {
   content: "";
@@ -34,11 +34,11 @@ section {
 .text-centered {
   text-align: center;
 }
-.hidden {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
+// .hidden {
+//   position: absolute;
+//   top: -9999px;
+//   left: -9999px;
+// }
 
 .subheader {
   color: $color-gray;
@@ -90,6 +90,112 @@ height: auto;
 }
   
 
+
+
+
+
+
+
+// /* SITE NAVIGATION*/
+
+// .site-navigation ul {
+//   border-top: 1px;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .site-navigation ul {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .site-navigation ul li {
+//   list-style: none;
+//   display: inline-block;
+// }
+
+// .site-navigation ul li a {
+//   display: block;
+//   padding: 1em 2em;
+//   transition: all .4s ease;
+// }
+
+// @media (max-width:767px) {
+//   .site-navigation ul li a:hover {
+  
+//     color: black;
+//   }
+// }
+
+
+
+
+/* MENU BUTTON */
+@media (max-width:767px){
+.menu-button {
+  position: absolute;
+  top: 1.5em;
+  right: 4%;
+}
+}
+
+@media (min-width: 768px) {
+  .menu-button {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+}
+
+/* NAV ICON */
+
+.navicon {
+  cursor: default;
+}
+
+.navicon:after{
+  display: inline-block;
+  cursor: pointer;
+  content: "\2630";
+  font-size: 1.5em;
+  color: $color-teal;
+  margin-left: .5em; 
+  transition: all .1s ease-out;
+}
+
+.expanded .navicon::after {
+    content: "\2715";
+    transform: rotate(-90deg);
+    transition: all .4s ease-out;
+}
+
+/* TOGGLE NAV */
+
+@media (max-width: 767px) {
+
+  .site-header.toggle-nav {
+    text-align:left;
+  }
+
+  .toggle-nav .site-navigation ul li {
+    display: block;
+    text-align: center;
+  }
+  .toggle-nav .site-navigation ul {
+    display: none;
+  }
+
+  .toggle-nav .site-navigation.expanded ul{
+    display: block;
+  }
+
+}
+
+
+
+
+
+
 /* site-nav ____________________________-*/
 .site-navigation {
   text-transform: uppercase;
@@ -106,11 +212,11 @@ height: auto;
     display: block;
    }
   
-  .menu-button {
-    position: absolute;
-    left: -9999px;
-    top: -9999px;
-  }
+  // .menu-button {
+  //   position: absolute;
+  //   left: -9999px;
+  //   top: -9999px;
+  // }
   
   ul,
   li {
@@ -137,8 +243,46 @@ height: auto;
   
 .page-nav{
   position: fixed;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
+  text-align: right;
+
+
+  .yellow-circle{
+    border: 3px solid $color-yellow;
+    background-color: $color-white;
+    border-radius: 100%;
+    height: 1.5em;
+    width: 1.5em;
+    margin-bottom: 0;
+}
+
+.nav-revealer{
+  opacity:0;
+  margin-left: -5em;
+  position: absolute;
+  z-index:200;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  padding-left: .3em;
+  margin-top: -.5em;
+}
+
+.yellow-circle:hover{
+  background-color: $color-yellow;
+
+.nav-revealer{
+background-color: $color-white;
+  margin-left: -8.5em;
+  opacity: 1;
+padding: .3em;
+margin-top: -.5em;
+z-index:200;
+position: absolute;
+  transition: all .4s ease;
+}
+}
 
   a{  
     text-decoration: none;
@@ -154,41 +298,14 @@ height: auto;
     font-family: $headingfont-family;
     padding-top: 2em;
     padding: 1em 0;
-    padding-left:.6em;
+    padding-right:.6em;
   }
-  
-  ul li:before{ 
-    content: "\26AC";
-    color: $color-yellow; 
-    margin-left: -1em; 
-    padding-top: 0;
-  }
-  // a {
-  //   visibility: hidden;
-  // }
 
   ul li:hover, a.active  { 
     font-weight: 700;
 
   }
 
-// _____________
-  .side-nav ul li a:after {
-    visibility: visible;
-    transition: all 0.3s cubic-bezier(0.6, 0, 0.5, 1);
-  }
-}
-
-/* HERO ___________________________*/
-
-.hero {
-  .proj_summary{
-    margin-top: 2em;
-    padding-top:1em;
-    padding-left: 6em;
-    padding-right: 6em;
-    padding-bottom:3em;
-  }
 }
 
 /* OBJECTIVE _______________________*/

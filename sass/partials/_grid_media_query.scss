@@ -218,6 +218,18 @@ body {
       }
     }
 
+    /* HERO ___________________________*/
+
+.hero {
+  .proj_summary{
+    margin-top: 2em;
+    padding-top:1em;
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-bottom:3em;
+  }
+}
+
   // design system_____________
   .type_specimen{
 
@@ -322,12 +334,6 @@ width: 30vw;
   .one-third.column.small {
     width: 28%;
   }
-  .page-nav{
-    ul li{
-    transform: rotate(270deg);
-  margin-left:0;
-    }
-  }
 
 // index quote____________
   .quote{ 
@@ -336,6 +342,18 @@ width: 30vw;
       }
   }
 
+
+// hero proj. summary__________
+
+.hero {
+  .proj_summary{
+    margin-top: 2em;
+    padding-top:1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom:2em;
+  }
+}
 // design system_____________
   .type_specimen{
     .type_scale{
@@ -486,6 +504,8 @@ width: 30vw;
   .radiolab_summary{
     margin-right: 0;
   }
+
+
 }
 /* #CLEARFIXES_______________ */
 .row2:after,
