@@ -110,7 +110,7 @@ p {
 #styletiles, section#brand_identity, section#sketches, #logo,
 .logo_exploration,
 #artwork,
-section#hi-fi,
+section#hi-fi, #first_draft,
 section#final, section#web, section#artwork, section#motion_graphic, #style_guide,
 #final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns {
   padding-top: 3em;
@@ -118,11 +118,11 @@ section#final, section#web, section#artwork, section#motion_graphic, #style_guid
   margin: 0;
   border: 1px solid red; }
 
-section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo {
+.book_first_draft, section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo {
   padding-top: 0;
   border: 3px solid green; }
 
-#copywriting h1, #logo h1, #sketches h1, #brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
+#first_draft h1, #copywriting h1, #logo h1, #sketches h1, #brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
   font-size: 3em; }
 
 .quote {
@@ -325,6 +325,23 @@ img {
   max-width: 100%;
   height: auto; }
 
+a img {
+  -webkit-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  overflow: hidden;
+  display: block; }
+
+a img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.swiper-slide a, .conquest-grid a, .radiolab_grid a {
+  display: block;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
 img.circular {
   border-radius: 100%; }
 
@@ -428,17 +445,17 @@ body {
     padding-top: .5em; }
   .sketches .final_sketch .space-right {
     margin-right: 10em; }
-  .sketches {
+  .sketches, .book_first_draft {
     padding-bottom: 0; }
-    .sketches .sketch_explain {
+    .sketches .sketch_explain, .book_first_draft .sketch_explain {
       padding-left: 4em; }
-    .sketches .logo_exploration {
+    .sketches .logo_exploration, .book_first_draft .logo_exploration {
       margin-top: 2em; }
-      .sketches .logo_exploration .row {
+      .sketches .logo_exploration .row, .book_first_draft .logo_exploration .row {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between; }
-        .sketches .logo_exploration .row img {
+        .sketches .logo_exploration .row img, .book_first_draft .logo_exploration .row img {
           padding-left: 2em;
           padding-right: 2em; } }
 
@@ -557,11 +574,11 @@ body {
       margin-right: 6em; }
   .color_study_zoo {
     padding-left: 2.5em; }
-  .sketches {
+  .sketches, .book_first_draft {
     padding-bottom: 0; }
-    .sketches .sketch_explain {
+    .sketches .sketch_explain, .book_first_draft .sketch_explain {
       margin-left: 2em; }
-    .sketches .logo_exploration .row {
+    .sketches .logo_exploration .row, .book_first_draft .logo_exploration .row {
       margin-top: 0;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -635,13 +652,13 @@ body {
     padding: 1.5em; }
   .color_study_zoo {
     margin-top: 1em; }
-  .sketches {
+  .sketches, .book_first_draft {
     padding-bottom: 0; }
-    .sketches .sketch_explain {
+    .sketches .sketch_explain, .book_first_draft .sketch_explain {
       padding-left: 0; }
-    .sketches .logo_exploration {
+    .sketches .logo_exploration, .book_first_draft .logo_exploration {
       margin-top: 2em; }
-      .sketches .logo_exploration img {
+      .sketches .logo_exploration img, .book_first_draft .logo_exploration img {
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 2em; }
@@ -1021,6 +1038,12 @@ fade-in {
 /* UI DESIGN */
 .final_ui img {
   margin-top: 1em; }
+
+.final_image_bottom .button {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .hero .conquest {
   background-color: #e2d5bb; }

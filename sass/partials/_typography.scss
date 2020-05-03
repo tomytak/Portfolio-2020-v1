@@ -99,7 +99,7 @@ font-style: normal;
 #styletiles, section#brand_identity,   section#sketches, #logo,
 .logo_exploration, 
 #artwork,
-section#hi-fi,
+section#hi-fi, #first_draft,
 section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
 #final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns{
   padding-top: 3em;
@@ -108,12 +108,12 @@ section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
   border: 1px solid red;
 }
 
- section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo{
+ .book_first_draft, section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo{
   padding-top: 0; 
   border: 3px solid green;
 }
 
-#copywriting h1, #logo h1, #sketches h1,#brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
+#first_draft h1, #copywriting h1, #logo h1, #sketches h1,#brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
   font-size: 3em; 
 }
 

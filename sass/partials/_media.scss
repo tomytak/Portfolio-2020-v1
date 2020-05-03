@@ -6,7 +6,22 @@ img {
     max-width: 100%;
     height: auto;
   }
+
+  a img{
+transition: all .1s ease-out;
+overflow: hidden;
+display:block;
+}
   
+a img:hover{
+  transform: scale(1.1);
+  }
+
+.swiper-slide a, .conquest-grid a, .radiolab_grid a {
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
   img.circular {
     border-radius: 100%;
   }
@@ -14,13 +29,5 @@ img {
   /* VIDEO */
 video {
     max-width: 100%;
-    height: auto; }
-
-  //  .hero{ 
-  //   object-fit: contain;
-  //   animation-name: myherovideoblur;
-  //   animation-duration: 1.25s;
-  //   animation-delay: 4.525s;
-  //   animation-fill-mode: forwards;
-  //   opacity: 1;
-  //  }
+    height: auto; 
+}

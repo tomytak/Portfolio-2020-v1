@@ -9,11 +9,11 @@ button,
   padding: 1.5em;
   border: 1px solid $color-teal;
   cursor: pointer;
-text-decoration: none;
-font-family: $headingfont-family; 
-text-transform: uppercase;
-letter-spacing: .2em;
-margin-top: 1em;
+  text-decoration: none;
+  font-family: $headingfont-family; 
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin-top: 1em;
 }
 
 button:hover,
@@ -27,9 +27,11 @@ button.alt,
   color: $color-teal;
 }
 
-  button.alt:hover,
-  .button.alt:hover {
-    background-color:$color-teal;
-    color: $color-white;
-    border-color:$color-teal; 
-  }
+button.alt:hover,
+.button.alt:hover {
+  background-color:$color-teal;
+  color: $color-white;
+  border-color:$color-teal; 
+}
+
+
