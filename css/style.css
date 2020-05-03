@@ -112,7 +112,7 @@ p {
 #artwork,
 section#hi-fi, #first_draft,
 section#final, section#web, section#artwork, section#motion_graphic, #style_guide,
-#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns {
+#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns, #work {
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0;
@@ -160,24 +160,24 @@ section#final, section#web, section#artwork, section#motion_graphic, #style_guid
 .body_gray {
   color: #999; }
 
-.hero {
+.hero, #work {
   text-align: left;
   margin-bottom: 3em; }
-  .hero .hero_sub-info {
+  .hero .hero_sub-info, #work .hero_sub-info {
     color: black;
     font-style: italic;
     display: block;
     margin-bottom: .5em; }
-  .hero h1 {
+  .hero h1, #work h1 {
     font-weight: 700;
     margin: 0;
     padding: 0; }
-  .hero h3 {
+  .hero h3, #work h3 {
     font-weight: 300;
     color: black;
     text-transform: none;
     margin-top: 0; }
-  .hero .hero_sub-info_title {
+  .hero .hero_sub-info_title, #work .hero_sub-info_title {
     color: #999;
     text-transform: uppercase;
     font-family: "Nobel", "Roboto Condensed", sans-serif;
@@ -881,7 +881,6 @@ section {
   .page-nav ul li:hover, .page-nav a.active {
     font-weight: 700; }
 
-/* HERO ___________________________*/
 /* OBJECTIVE _______________________*/
 .objective {
   margin: 0 auto;
@@ -1197,6 +1196,9 @@ fade-in {
 
 .home-hero {
   background-image: url("img/tomy_logo_home.svg"); }
+  .home-hero img {
+    margin-top: 0;
+    padding-top: 0; }
 
 .quote .yellow-circle {
   border: 5px solid #FEC412;

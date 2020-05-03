@@ -101,7 +101,7 @@ font-style: normal;
 #artwork,
 section#hi-fi, #first_draft,
 section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
-#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns{
+#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns, #work{
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0; 
@@ -166,7 +166,7 @@ section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
 
 
 // HERO_____________________________________
-.hero{
+.hero, #work{
   text-align: left; 
   margin-bottom: 3em;
   // margin-left: 50%;
