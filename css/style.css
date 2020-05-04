@@ -112,15 +112,13 @@ p {
 #artwork,
 section#hi-fi, #first_draft,
 section#final, section#web, section#artwork, section#motion_graphic, #style_guide,
-#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns, #work {
+#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns, #work_gallery {
   padding-top: 3em;
   padding-bottom: 0;
-  margin: 0;
-  border: 1px solid red; }
+  margin: 0; }
 
 .book_first_draft, section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo {
-  padding-top: 0;
-  border: 3px solid green; }
+  padding-top: 0; }
 
 #first_draft h1, #copywriting h1, #logo h1, #sketches h1, #brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
   font-size: 3em; }
@@ -147,6 +145,28 @@ section#final, section#web, section#artwork, section#motion_graphic, #style_guid
     text-decoration-line: underline;
     -webkit-text-decoration-color: #CC1F3D;
     text-decoration-color: #CC1F3D; }
+
+.work_text_home h2 {
+  font-family: "Nobel", "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #CC1F3D;
+  font-style: italic; }
+
+.work_text_home .work_mcd {
+  text-transform: none; }
+
+.work_text_home .work-title {
+  font-family: "Nobel", "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #005563; }
+
+.work_text_home .line h3 {
+  text-align: right;
+  margin-right: 2em;
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: .2em; }
 
 .about-me h1 {
   font-weight: 700; }
@@ -287,6 +307,9 @@ section#final, section#web, section#artwork, section#motion_graphic, #style_guid
 .work_toggle a:hover {
   font-weight: 700; }
 
+.work_mcd {
+  text-transform: none; }
+
 /* #BUTTONS */
 button,
 .button {
@@ -337,7 +360,7 @@ a img:hover {
   -ms-transform: scale(1.1);
   transform: scale(1.1); }
 
-.swiper-slide a, .conquest-grid a, .radiolab_grid a, .book_first_draft a {
+.work-image a, .swiper-slide a, .conquest-grid a, .radiolab_grid a, .book_first_draft a {
   display: block;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
@@ -550,6 +573,22 @@ body {
     width: 73%; }
   .quote h1 {
     font-size: 2em; }
+  .case-studies .row {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .case-studies .row .work_text_home {
+      margin-right: -13em;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .case-studies .row .work-image {
+      margin-left: 16em;
+      margin-bottom: 5em; }
+  .page-nav .yellow-circle {
+    height: 1.5em;
+    width: 1.5em; }
   /* HERO ___________________________*/
   .hero .proj_summary {
     margin-top: 2em;
@@ -605,8 +644,15 @@ body {
     margin-right: 0; }
   .one-third.column.small {
     width: 28%; }
+  .page-nav .yellow-circle {
+    height: 1em;
+    width: 1em; }
   .quote h1 {
-    font-size: 1.5em; }
+    font-size: 1.7em; }
+  .case-studies .row {
+    display: block; }
+    .case-studies .row .work-image {
+      margin-bottom: 4em; }
   .hero .proj_summary {
     margin-top: 2em;
     padding-top: 1em;
@@ -842,8 +888,6 @@ section {
     border: 3px solid #FEC412;
     background-color: #fff;
     border-radius: 100%;
-    height: 1.5em;
-    width: 1.5em;
     margin-bottom: 0; }
   .page-nav .nav-revealer {
     opacity: 0;
@@ -1210,6 +1254,22 @@ fade-in {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+#work_gallery {
+  margin-bottom: 5em; }
+  #work_gallery h1 {
+    font-weight: 700;
+    margin-bottom: 0; }
+  #work_gallery h2 {
+    margin-bottom: 0; }
+  #work_gallery h3 {
+    margin-top: 0; }
+  #work_gallery .case-studies .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #work_gallery .case-studies .row a {
+      text-decoration: none; }
 
 .about-me {
   padding-top: 0; }

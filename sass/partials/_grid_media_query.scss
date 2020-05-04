@@ -218,6 +218,33 @@ body {
       }
     }
 
+    // index work__________________
+.case-studies{
+  .row{
+    align-items: flex-start;
+
+    .work_text_home{
+    margin-right: -13em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+    .work-image{  
+margin-left: 16em;
+margin-bottom: 5em;
+
+    }
+  }
+}
+
+
+// page nav___________________
+.page-nav{
+  .yellow-circle{
+    height: 1.5em;
+    width: 1.5em;   
+}
+}
+
     /* HERO ___________________________*/
 
 .hero {
@@ -324,6 +351,7 @@ width: 30vw;
 
   
 @media (max-width: $breakpoint-small) {
+
   .column.small {
     float: left;
     margin-right: 8%;
@@ -335,25 +363,44 @@ width: 30vw;
     width: 28%;
   }
 
+// page nav___________________
+.page-nav{
+  .yellow-circle{
+    height: 1em;
+    width: 1em;   
+}
+}
+
 // index quote____________
   .quote{ 
       h1{
-      font-size: 1.5em;
+      font-size: 1.7em;
       }
   }
 
 
-// hero proj. summary__________
+// index work__________________
+.case-studies{
+  .row{
+    display: block;
 
-.hero {
-  .proj_summary{
-    margin-top: 2em;
-    padding-top:1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom:2em;
+    .work-image{     
+      margin-bottom: 4em;
+    }
   }
 }
+
+// hero proj. summary__________
+
+  .hero {
+    .proj_summary{
+      margin-top: 2em;
+      padding-top:1em;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-bottom:2em;
+    }
+  }
 // design system_____________
   .type_specimen{
     .type_scale{
@@ -371,9 +418,9 @@ width: 30vw;
   }
 
 // conquest grid_________________
-.conquest-grid{
-  width: 100%;
-}
+  .conquest-grid{
+    width: 100%;
+  }
 
 
 // conquest—brand strategy & copywriting____________
@@ -465,7 +512,7 @@ width: 30vw;
         padding: 1.5em;
         }
       }
-  }
+    }
   }
 
   // zoo color study_design system_________
@@ -474,22 +521,22 @@ width: 30vw;
   }
 
   // ZOO SKETCHES____________
-.sketches, .book_first_draft{
-  padding-bottom: 0;
-  
-  .sketch_explain{
-      padding-left: 0;
-  }
-  
-      .logo_exploration{
-          margin-top:2em;
-          
-          img{
-              padding-left:0;
-              padding-right: 0;
-              margin-bottom: 2em;
-          }
+  .sketches, .book_first_draft{
+    padding-bottom: 0;
+    
+    .sketch_explain{
+        padding-left: 0;
+    }
+    
+    .logo_exploration{
+        margin-top:2em;
+        
+      img{
+          padding-left:0;
+          padding-right: 0;
+          margin-bottom: 2em;
       }
+    }
   }
 
 // zoo final designs_________________
@@ -504,9 +551,8 @@ width: 30vw;
   .radiolab_summary{
     margin-right: 0;
   }
-
-
 }
+
 /* #CLEARFIXES_______________ */
 .row2:after,
 .group:after,

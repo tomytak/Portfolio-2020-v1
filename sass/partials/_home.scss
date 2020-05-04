@@ -19,3 +19,58 @@ img{
     transform: translateX(-50%);
     }
 }
+
+// work_______________________
+
+#work_gallery{
+    margin-bottom: 5em;
+    h1{
+        font-weight: 700;
+        margin-bottom: 0;
+    } 
+    
+    h2{
+       margin-bottom: 0;
+    }
+
+    h3{
+        margin-top: 0;
+    }
+
+  
+
+    .case-studies{
+        .row{
+            align-items: center;
+            a{
+                text-decoration: none; 
+            }  
+        }
+    }
+
+// .row .swap{
+//     display: flex;
+//     .reverse-line{
+//         transform: rotate(180deg);
+//     }
+//     h2{
+//         text-align: right;
+//     }
+
+//     h3{
+//         text-align:left;
+//         margin-left: 2em;
+//     }
+
+//     .work_text_home{
+//         border: 1px solid green;
+//         // float: right;
+//     }
+
+// }
+
+
+
+
+
+}

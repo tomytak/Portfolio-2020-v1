@@ -101,16 +101,16 @@ font-style: normal;
 #artwork,
 section#hi-fi, #first_draft,
 section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
-#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns, #work{
+#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns, #work_gallery{
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0; 
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
  .book_first_draft, section.type_specimen, section.sketches, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo{
   padding-top: 0; 
-  border: 3px solid green;
+  // border: 3px solid green;
 }
 
 #first_draft h1, #copywriting h1, #logo h1, #sketches h1,#brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
@@ -140,6 +140,38 @@ section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
     text-decoration-color: $color-red;
   }
 }
+
+// index work_____________________________
+.work_text_home{
+  h2{
+    font-family: $headingfont-family;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $color-red;
+    font-style: italic;
+  }
+
+  .work_mcd{
+    text-transform: none;
+  }
+
+  .work-title{
+    font-family: $headingfont-family;
+    text-transform: uppercase;
+    color: $color-teal;
+  }
+
+  .line{  
+    h3{
+      text-align: right;
+      margin-right: 2em;
+      font-weight: 300;
+      font-size: 1em;
+      letter-spacing: .2em;
+    }
+  }
+}
+
 
 // ABOUT ME__________________________
 
@@ -354,4 +386,11 @@ a:hover, .toggle_title_next{
 }
 .work_toggle a:hover{
   font-weight: 700;
+}
+
+
+
+// Mcdonald's text______________
+.work_mcd{
+  text-transform: none;
 }
