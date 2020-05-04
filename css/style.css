@@ -634,7 +634,10 @@ body {
     padding-bottom: 0;
     width: 30vw; }
   .radiolab_summary {
-    margin-right: 3em; } }
+    margin-right: 3em; }
+  .about-me .about_intro {
+    width: 45vw;
+    margin: 0 auto; } }
 
 @media (max-width: 768px) {
   .column.small {
@@ -721,7 +724,11 @@ body {
     padding-bottom: 0;
     margin-right: 0; }
   .radiolab_summary {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .about-me .about_intro {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2em; } }
 
 /* #CLEARFIXES_______________ */
 .row2:after,
@@ -1013,7 +1020,7 @@ section {
       margin-top: 2em;
       margin-right: 0;
       text-align: center; }
-    .footer .row .one-third {
+    .footer .row .one-half {
       margin-top: 2em;
       margin-right: 0;
       text-align: center; }
@@ -1273,7 +1280,7 @@ fade-in {
 
 .about-me {
   padding-top: 0; }
-  .about-me .yellow-circle {
+  .about-me .about_intro .yellow-circle {
     border: 5px solid #FEC412;
     background-color: #fff;
     border-radius: 50%;
@@ -1285,12 +1292,14 @@ fade-in {
     transform: translateX(-50%);
     margin-bottom: 2em; }
   .about-me .row {
+    margin-top: 3em;
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start; }
-  .about-me .about-sub-info {
-    margin-top: 2em; }
-    .about-me .about-sub-info .one-third {
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .about-me .row .one-third {
       padding: 1.5em; }
 
 .mcd {

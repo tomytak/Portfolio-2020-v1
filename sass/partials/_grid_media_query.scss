@@ -337,16 +337,26 @@ margin-bottom: 5em;
     }
   }
 // zoo final designs_________________
-.final_zoo_explain{
-  padding-top: 0;
-  padding-bottom: 0;
-width: 30vw;
-}
+  .final_zoo_explain{
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 30vw;
+  }
+
+// radiolab summary________________
+  .radiolab_summary{
+      margin-right: 3em;
+  }
 
 
-.radiolab_summary{
-    margin-right: 3em;
-}
+// about me_______________________
+  .about-me{
+
+    .about_intro{
+        width: 45vw;
+        margin: 0 auto;
+    }
+  }
 }
 
   
@@ -551,8 +561,18 @@ width: 30vw;
   .radiolab_summary{
     margin-right: 0;
   }
-}
 
+// about me______________________
+.about-me{
+
+
+  .about_intro{
+      width:100%;
+      margin: 0 auto;
+      margin-top: 2em;
+  }
+}
+}
 /* #CLEARFIXES_______________ */
 .row2:after,
 .group:after,
