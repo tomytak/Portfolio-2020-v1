@@ -128,89 +128,82 @@ height: auto;
 // }
 
 
-
-
 /* MENU BUTTON */
-@media (max-width:767px){
-.menu-button {
-  position: absolute;
-  top: 1.5em;
-  right: 4%;
-}
-}
+// @media (max-width:767px){
+// .menu-button {
+//   position: absolute;
+//   top: 1.5em;
+//   right: 4%;
+// }
+// }
 
-@media (min-width: 768px) {
-  .menu-button {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-}
+// @media (min-width: 768px) {
+//   .menu-button {
+//     position: absolute;
+//     top: -9999px;
+//     left: -9999px;
+//   }
+// }
 
 /* NAV ICON */
 
-.navicon {
-  cursor: default;
-}
+// .navicon {
+//   cursor: default;
+// }
 
-.navicon:after{
-  display: inline-block;
-  cursor: pointer;
-  content: "\2630";
-  font-size: 1.5em;
-  color: $color-teal;
-  margin-left: .5em; 
-  transition: all .1s ease-out;
-}
+// .navicon:after{
+//   display: inline-block;
+//   cursor: pointer;
+//   content: "\2630";
+//   font-size: 1.5em;
+//   color: $color-teal;
+//   margin-left: .5em; 
+//   transition: all .1s ease-out;
+// }
 
-.expanded .navicon::after {
-    content: "\2715";
-    transform: rotate(-90deg);
-    transition: all .4s ease-out;
-}
+// .expanded .navicon::after {
+//     content: "\2715";
+//     transform: rotate(-90deg);
+//     transition: all .4s ease-out;
+// }
 
-/* TOGGLE NAV */
+// /* TOGGLE NAV */
 
-@media (max-width: 767px) {
+// @media (max-width: 767px) {
 
-  .site-header.toggle-nav {
-    text-align:left;
-  }
+//   .site-header.toggle-nav {
+//     text-align:left;
+//   }
 
-  .toggle-nav .site-navigation ul li {
-    display: block;
-    text-align: center;
-  }
-  .toggle-nav .site-navigation ul {
-    display: none;
-  }
+//   .toggle-nav .site-navigation ul li {
+//     display: block;
+//     text-align: center;
+//   }
+//   .toggle-nav .site-navigation ul {
+//     display: none;
+//   }
 
-  .toggle-nav .site-navigation.expanded ul{
-    display: block;
-  }
+//   .toggle-nav .site-navigation.expanded ul{
+//     display: block;
+//   }
 
-}
-
-
-
-
-
+// }
 
 /* site-nav ____________________________-*/
-.site-navigation {
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 80%;
-  font-family: $headingfont-family; 
+// .site-navigation {
+//   text-transform: uppercase;
+//   letter-spacing: 0.15em;
+//   font-size: 80%;
+//   font-family: $headingfont-family; 
 
-  .nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: -webkit-flex;
-  display: -ms-flexbox;
-    display: block;
-   }
+//   .nav ul {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//     display: -webkit-flex;
+//   display: -ms-flexbox;
+//     display: block;
+//    }
   
   // .menu-button {
   //   position: absolute;
@@ -237,7 +230,7 @@ height: auto;
   li a:hover {
   font-weight: 700;
   }
-}
+// }
   
 /*PAGE NAV ___________________________________*/
   
@@ -439,4 +432,182 @@ margin-bottom: 5em;
     }
   }
 
+}
+
+// STUFF I ADDED _____________________
+
+* { box-sizing: border-box; }
+ .site-header .container {
+  padding: 1em .5em;
+  color: teal;
+}
+
+@media (min-width: 768px) {
+  .site-header {
+      display: flex;
+      justify-content: space-between;
+  }
+}
+
+.site-header a,
+.site-footer a {
+  /* color: rgba(0,0,0,.8);
+   */
+  text-decoration: none;
+}
+.site-header a:hover,
+.site-footer a:hover {
+  color: rgba(0,0,0,1);
+}
+
+/* SITE FOOTER */
+.site-footer {
+  padding: 1em .5em 2em .5em;
+}
+
+/* SITE ID (LOGO) */
+.site-id h1 {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+.site-id a {
+  display: inline-block;
+  padding: .25em 0;
+}
+
+/* SITE ID (LOGO) */
+.site-id h1 {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+.site-id a {
+  display: inline-block;
+  padding: .25em 0;
+}
+
+/* SITE NAV (Primary Top Nav) */
+.site-nav {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 80%;
+}
+.site-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-family: $headingfont-family; 
+}
+
+.site-nav li {
+  list-style: none;
+}
+
+.site-nav a {
+  display: block;
+  padding: .5em 1em;
+}
+
+/* MENU BUTTON */
+.menu-button {
+  position: absolute;
+  left: -9999px;
+  padding: .5em;
+}
+.menu-button:hover {
+  cursor: pointer;
+}
+.menu-button::selection {
+  color: none;
+  background: none;
+}
+
+/* TOGGLE-NAV */
+
+@media (max-width: 767px) {
+
+  .toggle-nav .site-id h1 {
+      text-align: left;
+  }
+
+  .toggle-nav .menu-button {
+      position: absolute;
+      left: auto;
+      top: 1em;
+      right: 1.5em;
+  }
+
+  .toggle-nav .site-nav {
+      text-align: center;
+  }
+
+  /* HIDE NAV ON SMALL SCREENS BY DEFAULT */
+  .toggle-nav .site-nav ul {
+      position: absolute;
+      left: -9999px;
+      margin-top: 1em;
+  }
+
+  /* SHOW NAV ON SMALL SCREENS WHEN EXPANDED CLASS IS TOGGLED */
+  .toggle-nav.expanded .site-nav ul {
+      position: static;
+      left: auto;
+      display: block;
+  }
+  .toggle-nav.expanded .site-nav a {
+      background-color: teal;
+      color: white;
+      margin: .5em 0;
+      padding: 1em;
+      justify-content: space-between;
+  }
+
+  .toggle-nav.expanded .site-nav a:hover {
+      background-color: white;
+      color: teal;
+  }
+
+  /* ANIMATING THE TOGGLE NAV */
+  .toggle-nav .site-nav ul {
+      transition: all 1s ease;
+      max-height: 0;
+  }
+
+  .toggle-nav.expanded .site-nav ul  {
+      max-height: 400px;
+  }
+
+}
+
+/* NAVICON */
+
+.navicon {
+  color: rgba(0,0,0,0);
+  padding: 0;
+}
+.navicon::after {
+  content: "\2630";
+  color: $color-teal;
+  display: inline-block;
+  font-size: 1.5em;
+  transform: rotate(0deg);
+}
+
+.expanded .navicon::after {
+  content: "\2715";
+  transform: rotate(-90deg);
+  transition: transform .4s ease-out;
+}
+
+
+/* HELPERS */
+@media(min-width:768px){
+  .hideonlarge {
+      visibility: hidden;
+  }
 }
